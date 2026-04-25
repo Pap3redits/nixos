@@ -137,7 +137,7 @@
   };
   environment.variables = {
     EDITOR = "nvim";
-    NH_FLAKE = "/home/christian/nixos_config";
+    NH_FLAKE = "/home/christian/nixos";
     XDG_CONFIG_HOME = "$HOME/.config";
   };
 

@@ -8,7 +8,7 @@
   #};
 
   xdg.configFile."hypr" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos_config/home/conf/hypr";
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/home/conf/hypr";
     force = true;
     recursive = true;
   };
