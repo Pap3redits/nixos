@@ -26,7 +26,6 @@
       "com.stremio.Stremio"
       "app.zen_browser.zen"
       "org.jeffvli.feishin"
-      "org.freedesktop.Sdk/x86_64/24.08"
     ];
     update.auto = {
       enable = true;

@@ -39,7 +39,6 @@
     teams-for-linux
     google-chrome
     networkmanagerapplet
-    lutris
     dxvk
     vkd3d
     vulkan-tools
@@ -81,7 +80,7 @@
     qt6Packages.qt6ct
     evolution
     obs-studio
-    flatpak-builder
+    gnome-keyring
   ];
 
   #programs.doom-emacs = {
