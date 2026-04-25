@@ -45,7 +45,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   #TODO: change host name for new config
-  networking.hostName = "nox_nostra"; # Define your hostname.
+  networking.hostName = "nox-nostra"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

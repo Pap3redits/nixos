@@ -74,7 +74,7 @@
           nixpkgs.lib.nixosSystem {
             modules = [
               #./configuration.nix
-              ./hosts/nox_nostra
+              ./hosts/nox-nostra
               home-manager.nixosModules.home-manager
               nix-flatpak.nixosModules.nix-flatpak
               deadlock-api-ingest.nixosModules.default
