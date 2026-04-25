@@ -69,7 +69,7 @@
               #  inputs.nix-doom-emacs-unstraightened.homeModule
             ];
           };
-        nox_nostra = let
+        nox-nostra = let
         in
           nixpkgs.lib.nixosSystem {
             modules = [

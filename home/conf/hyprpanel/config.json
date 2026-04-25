@@ -452,5 +452,6 @@
   "theme.bar.buttons.modules.cpuTemp.icon": "#fab387",
   "theme.bar.buttons.modules.cpuTemp.text": "#fab387",
   "theme.bar.buttons.modules.cpuTemp.border": "#fab387",
-  "theme.osd.border.color": "#8ff0a4"
+  "theme.osd.border.color": "#8ff0a4",
+  "wallpaper.image": "/home/christian/nixos/assets/wallpapers/polyscape_pillars_2.png"
 }
