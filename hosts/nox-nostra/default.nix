@@ -179,7 +179,7 @@
 
   services.mullvad-vpn = {
     enable = true;
-    package = mullvad
+    package = mullvad;
 
   };
     
