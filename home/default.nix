@@ -82,7 +82,6 @@
     obs-studio
     gnome-keyring
     mullvad
-    mullvad-vpn
   ];
 
   #programs.doom-emacs = {
