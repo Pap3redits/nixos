@@ -177,6 +177,8 @@
 
   };
 
+  services.mullvad-vpn.enable = true;
+
   services.udisks2.enable = true;
 
   services.udev.extraRules = ''
