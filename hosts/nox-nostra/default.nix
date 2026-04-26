@@ -112,6 +112,7 @@
       "networkmanager"
       "wheel"
       "input"
+      "tailscale"
     ];
   };
 
@@ -171,7 +172,7 @@
   };
 
   services.tailscale = {
-    enable = true;
+    enable = false;
     useRoutingFeatures = "client";
 
   };
