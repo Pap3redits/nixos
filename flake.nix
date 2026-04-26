@@ -5,7 +5,6 @@
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
-    deadlock-api-ingest.url = "github:deadlock-api/deadlock-api-ingest";
 
     #nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
 
@@ -20,7 +19,6 @@
       nix-flatpak,
       nixpkgs,
       home-manager,
-      deadlock-api-ingest,
       ...
     }:
     {
@@ -34,7 +32,6 @@
               ./hosts/nixos-thinkpad
               home-manager.nixosModules.home-manager
               nix-flatpak.nixosModules.nix-flatpak
-              deadlock-api-ingest.nixosModules.default
 
               {
                 home-manager.useGlobalPkgs = true;
@@ -56,13 +53,6 @@
                 };
                 home-manager.users.christian = import ./home;
 
-                services.deadlock-api-ingest = {
-                  enable = true;
-                  # IMPORTANT: Set this to the user who has Steam installed
-                  user = "christian";
-                  group = "users";
-                  package = deadlock-api-ingest.packages."x86_64-linux".default;
-                };
 
               }
 
@@ -77,7 +67,6 @@
               ./hosts/nox-nostra
               home-manager.nixosModules.home-manager
               nix-flatpak.nixosModules.nix-flatpak
-              deadlock-api-ingest.nixosModules.default
 
               {
                 home-manager.useGlobalPkgs = true;
@@ -98,14 +87,6 @@
                   };
                 };
                 home-manager.users.christian = import ./home;
-
-                services.deadlock-api-ingest = {
-                  enable = true;
-                  # IMPORTANT: Set this to the user who has Steam installed
-                  user = "christian";
-                  group = "users";
-                  package = deadlock-api-ingest.packages."x86_64-linux".default;
-                };
 
               }
 
