@@ -26,6 +26,7 @@
       "com.stremio.Stremio"
       "app.zen_browser.zen"
       "org.jeffvli.feishin"
+      "io.github.arunsivaramanneo.GPUViewer"
     ];
     update.auto = {
       enable = true;
