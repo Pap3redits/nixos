@@ -81,7 +81,6 @@
     evolution
     obs-studio
     gnome-keyring
-    mullvad
   ];
 
   #programs.doom-emacs = {
