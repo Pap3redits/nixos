@@ -177,7 +177,12 @@
 
   };
 
-  services.mullvad-vpn.enable = true;
+  services.mullvad-vpn = {
+    enable = true;
+    package = mullvad
+
+  };
+    
 
   services.udisks2.enable = true;
 
