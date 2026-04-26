@@ -422,7 +422,8 @@
   "bar.customModules.worldclock.showIcon": true,
   "theme.bar.buttons.modules.worldclock.enableBorder": false,
   "bar.systray.ignore": [
-    "nm-applet"
+    "nm-applet",
+    "blueman-applet"
   ],
   "theme.bar.buttons.clock.enableBorder": false,
   "bar.clock.format": "%b %d %H:%M",
