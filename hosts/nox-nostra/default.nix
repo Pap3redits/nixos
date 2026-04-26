@@ -177,7 +177,7 @@
 
   };
 
-  services.mullvad.vpn = {
+  services.mullvad-vpn = {
     enable = true;
   };
 
