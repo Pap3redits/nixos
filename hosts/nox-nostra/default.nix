@@ -171,7 +171,7 @@
   };
 
   services.tailscale = {
-    enable = false;
+    enable = true;
     useRoutingFeatures = "client";
 
   };
