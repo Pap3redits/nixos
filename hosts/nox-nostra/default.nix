@@ -161,9 +161,7 @@
   hardware.bluetooth.enable = true;
   hardware.graphics = {
     enable = true;
-    extraPackages = with pkgs; [
-      vpl-gpu-rt
-    ];
+    enable32Bit = true;
   };
 
   programs.steam = {
@@ -190,10 +188,6 @@
   services.upower.enable = true;
   services.thermald.enable = true;
   services.auto-cpufreq.enable = true;
-  powerManagement = {
-    enable = true;
-    powertop.enable = true;
-  };
   services.logind.settings.Login = {
     HandleLidSwitch = "suspend";
     HandleLidSwitchExternalPower = "lock";
