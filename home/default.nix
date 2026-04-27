@@ -105,7 +105,7 @@
     ./terminal/zoxide.nix
     ./terminal/yazi.nix
     ./terminal/clipse.nix
-    ./termial/nvim.nix
+    ./terminal/nvim.nix
     #./ui/hyprland.nix
     ./ui/hyprland_test.nix
     ./ui/wofi.nix
