@@ -59,7 +59,6 @@
     nh
     nvtopPackages.full
     onlyoffice-desktopeditors
-    obsidian
     vlc
     wf-recorder
     yazi
