@@ -130,7 +130,6 @@
     sddm-astronaut
     nfs-utils
     clipse
-    hyprpanel
   ];
 
   programs.neovim = {

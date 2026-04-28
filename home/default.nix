@@ -108,7 +108,7 @@
     #./ui/hyprland.nix
     ./ui/hyprland_test.nix
     ./ui/wofi.nix
-    ./ui/hyprpanel.nix
+    #./ui/hyprpanel.nix
     ./ui/waybar.nix
     ./cast.nix
     #./zen.nix
