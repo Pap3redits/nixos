@@ -130,6 +130,7 @@
     sddm-astronaut
     nfs-utils
     clipse
+    wayle
   ];
 
   programs.neovim = {

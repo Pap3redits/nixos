@@ -68,7 +68,6 @@
     kdePackages.kcalc
     yt-dlp
     rpi-imager
-    bottles
     wl-clipboard
     matugen
     hyprlauncher
