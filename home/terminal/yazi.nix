@@ -20,6 +20,7 @@
     settings = {
       keymap = lib.importTOML ../conf/yazi/keymap.toml;
     };
+    flavors = "/home/christian/nixos/home/conf/yazi/rose-pine.yazi";
 
   };
 
