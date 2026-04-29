@@ -54,20 +54,15 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Configure sddm and theme
-  services.displayManager.sddm = {
+
+  services.displayManager.gdm.enable = true;
+
+  /*services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-    package = pkgs.kdePackages.sddm; # needed to get dependency to work for theme
-    extraPackages = with pkgs; [
-      sddm-astronaut # must be installed here and in system packages
-    ];
-    theme = "sddm-astronaut-theme";
-    settings = {
-      Theme = {
-        Current = "sddm-astronaut-theme";
-      };
-    };
-  };
+    #theme = "sddm-astronaut-theme";
+    #extraPackages = [ pkgs.sddm-astronaut ];
+  };*/
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -127,7 +122,7 @@
     git
     kitty
     kdePackages.qtmultimedia # needed for the sddm theme
-    sddm-astronaut
+    #sddm-astronaut
     nfs-utils
     clipse
     wayle

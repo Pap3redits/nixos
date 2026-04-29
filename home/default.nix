@@ -79,6 +79,7 @@
     evolution
     obs-studio
     gnome-keyring
+    rose-pine-cursor
   ];
 
   #programs.doom-emacs = {
@@ -118,8 +119,8 @@
 
   home.pointerCursor = {
     gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
+    package = pkgs.rose-pine-cursor;
+    name = "BreezeX-RosePine-Linux";
     size = 16;
   };
   
