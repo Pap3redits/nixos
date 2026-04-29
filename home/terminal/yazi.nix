@@ -19,9 +19,14 @@
     };
     settings = {
       keymap = lib.importTOML ../conf/yazi/keymap.toml;
-      theme = lib.importTOML ../conf/yazi/theme.toml;
+      #theme = lib.importTOML ../conf/yazi/theme.toml;
     };
-    flavors = {rose-pine = /nixos/home/conf/yazi/rose-pine.yazi};
+    theme = {
+      flavor = {
+        dark = "rose-pine";
+      };
+    };
+    flavors = {rose-pine = ../conf/yazi/rose-pine.yazi;};
 
   };
 
