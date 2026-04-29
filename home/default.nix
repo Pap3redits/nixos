@@ -21,7 +21,6 @@
     fd
     nerd-fonts.iosevka
     fastfetch
-    btop
     protonplus
     inxi
     pipewire
@@ -105,6 +104,7 @@
     ./terminal/yazi.nix
     ./terminal/clipse.nix
     ./terminal/nvim.nix
+    ./terminal/btop.nix
     #./ui/hyprland.nix
     ./ui/hyprland_test.nix
     ./ui/wofi.nix
