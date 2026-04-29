@@ -15,12 +15,13 @@
     enable = true;
     shellWrapperName = "y";
     plugins = {
-    inherit (pkgs.yaziPlugins) mount recycle-bin;
+      inherit (pkgs.yaziPlugins) mount recycle-bin;
     };
     settings = {
       keymap = lib.importTOML ../conf/yazi/keymap.toml;
+      theme = lib.importTOML ../conf/yazi/theme.toml;
     };
-    flavors = "/home/christian/nixos/home/conf/yazi/rose-pine.yazi";
+    flavors = {rose-pine = /nixos/home/conf/yazi/rose-pine.yazi};
 
   };
 
