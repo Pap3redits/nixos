@@ -14,7 +14,6 @@
     ripgrep
     kitty
     eza
-    fzf
     bat
     gcc
     lazygit
@@ -80,6 +79,8 @@
     gnome-keyring
     rose-pine-cursor
     betterdiscordctl
+    rose-pine-gtk-theme
+    rose-pine-icon-theme
   ];
 
   #programs.doom-emacs = {
@@ -106,6 +107,7 @@
     ./terminal/clipse.nix
     ./terminal/nvim.nix
     ./terminal/btop.nix
+    ./terminal/fzf.nix
     #./ui/hyprland.nix
     ./ui/hyprland_test.nix
     ./ui/wofi.nix
