@@ -4,7 +4,7 @@
   programs.ghostty = {
     enable = true;
     settings = {
-        #theme = everforest-dark;
+        theme = "Rose Pine";
 
         font-family = "Iosevka Nerd Font";
         font-style = "Regular";
@@ -21,6 +21,5 @@
         shell-integration-features = "no-cursor";
 
       };
-    };
-
+  };
 }

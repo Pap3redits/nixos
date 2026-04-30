@@ -79,6 +79,7 @@
     obs-studio
     gnome-keyring
     rose-pine-cursor
+    betterdiscordctl
   ];
 
   #programs.doom-emacs = {
