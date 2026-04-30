@@ -83,6 +83,7 @@
     rose-pine-icon-theme
     hyprtoolkit
     base16-schemes
+    walker
   ];
 
   #programs.doom-emacs = {
@@ -100,7 +101,7 @@
     };
   };
 
-  stylix.targets.hyprlock.enable = false;
+  
 
 
   imports = [

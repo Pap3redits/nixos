@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
 {
+  
+  gtk.gtk4.theme = null;
 
   #wayland.windowManager.hyprland = {
   #  enable = true;
@@ -14,6 +16,7 @@
   };
 
   programs.hyprlock.enable = true;
+  stylix.targets.hyprlock.enable = false;
   /*services.hyprpaper = {
     enable = true;
     settings.splash = false;
