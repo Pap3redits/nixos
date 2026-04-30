@@ -5,6 +5,11 @@
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     #nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
 
@@ -19,6 +24,7 @@
       nix-flatpak,
       nixpkgs,
       home-manager,
+      stylix,
       ...
     }:
     {
@@ -67,7 +73,7 @@
               ./hosts/nox-nostra
               home-manager.nixosModules.home-manager
               nix-flatpak.nixosModules.nix-flatpak
-
+              stylix.nixosModules.stylix
               {
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;

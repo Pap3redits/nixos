@@ -82,6 +82,7 @@
     rose-pine-gtk-theme
     rose-pine-icon-theme
     hyprtoolkit
+    base16-schemes
   ];
 
   #programs.doom-emacs = {
