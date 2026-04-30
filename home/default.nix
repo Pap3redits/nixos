@@ -81,6 +81,7 @@
     betterdiscordctl
     rose-pine-gtk-theme
     rose-pine-icon-theme
+    hyprtoolkit
   ];
 
   #programs.doom-emacs = {
