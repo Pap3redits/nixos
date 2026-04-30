@@ -100,6 +100,8 @@
     };
   };
 
+  stylix.targets.hyprlock.enable = false;
+
 
   imports = [
     ./terminal/shell.nix
