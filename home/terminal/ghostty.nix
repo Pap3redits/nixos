@@ -10,8 +10,8 @@
         font-style = "Regular";
         font-size = 15;
 
-        window-padding-x = 14;
-        window-padding-y = 14;
+        window-padding-x = 32;
+        window-padding-y = 32;
         confirm-close-surface = false;
         resize-overlay = "never";
 
