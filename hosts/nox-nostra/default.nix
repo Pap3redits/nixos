@@ -28,6 +28,7 @@
       "app.zen_browser.zen"
       "org.jeffvli.feishin"
       "io.github.arunsivaramanneo.GPUViewer"
+      "io.github.nokse22.minitext"
     ];
     update.auto = {
       enable = true;
@@ -129,6 +130,7 @@
     nfs-utils
     clipse
     wayle
+    quickshell
   ];
 
   programs.neovim = {
