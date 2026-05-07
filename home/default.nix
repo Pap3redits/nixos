@@ -29,12 +29,10 @@
     hyprshot
     kdePackages.filelight
     wgnord
-    ticktick
     go
     discord
     wireguard-tools
     psmisc
-    teams-for-linux
     google-chrome
     networkmanagerapplet
     dxvk
@@ -47,7 +45,6 @@
     protontricks
     pavucontrol
     tailscale
-    zed-editor
     nix-ld
     nil
     nixd
@@ -63,18 +60,13 @@
     cpx
     vscodium
     python3
-    kdePackages.kcalc
     yt-dlp
-    rpi-imager
     wl-clipboard
-    matugen
-    hyprlauncher
     trash-cli
     gparted-full
     hyprpolkitagent
     util-linux
     qt6Packages.qt6ct
-    evolution
     obs-studio
     gnome-keyring
     rose-pine-cursor
@@ -115,13 +107,7 @@
     ./terminal/nvim.nix
     ./terminal/btop.nix
     ./terminal/fzf.nix
-    #./ui/hyprland.nix
     ./ui/hyprland_test.nix
-    ./ui/wofi.nix
-    #./ui/hyprpanel.nix
-    ./ui/waybar.nix
-    ./cast.nix
-    #./zen.nix
   ];
   
   #enables bluetooth audio control

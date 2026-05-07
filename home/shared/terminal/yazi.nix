@@ -18,7 +18,7 @@
       inherit (pkgs.yaziPlugins) mount recycle-bin;
     };
     settings = {
-      keymap = lib.importTOML ../conf/yazi/keymap.toml;
+      keymap = lib.importTOML ../../conf/yazi/keymap.toml;
       #theme = lib.importTOML ../conf/yazi/theme.toml;
     };
     theme = {
