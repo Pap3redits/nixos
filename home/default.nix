@@ -99,14 +99,14 @@
 
 
   imports = [
-    ./terminal/shell.nix
-    ./terminal/ghostty.nix
-    ./terminal/zoxide.nix
-    ./terminal/yazi.nix
-    ./terminal/clipse.nix
-    ./terminal/nvim.nix
-    ./terminal/btop.nix
-    ./terminal/fzf.nix
+    ./shared/terminal/shell.nix
+    ./shared/terminal/ghostty.nix
+    ./shared/terminal/zoxide.nix
+    ./shared/terminal/yazi.nix
+    ./shared/terminal/clipse.nix
+    ./shared/terminal/nvim.nix
+    ./shared/terminal/btop.nix
+    ./shared/terminal/fzf.nix
     ./ui/hyprland_test.nix
   ];
   
