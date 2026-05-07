@@ -84,6 +84,8 @@
     hyprtoolkit
     base16-schemes
     walker
+    protonmail-desktop
+    signal-desktop
   ];
 
   #programs.doom-emacs = {

@@ -17,14 +17,29 @@
   ];
 
   #TODO: change host name for new config
-  networking.hostName = "nox-nostra"; # Define your hostname.
+  networking.hostName = "itani-lo-sahn"; # Define your hostname.
+  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  hardware.amdgpu.opencl.enable = true;
 
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ 51820 1198 41641];
-  # Or disable the firewall altogether.
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      vpl-gpu-rt
+    ];
+  };
+
+  services.upower.enable = true;
+  services.thermald.enable = true;
+  services.auto-cpufreq.enable = true;
+  powerManagement = {
+    enable = true;
+    powertop.enable = true;
+  };
+  services.logind.settings.Login = {
+    HandleLidSwitch = "suspend";
+    HandleLidSwitchExternalPower = "lock";
+  };
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

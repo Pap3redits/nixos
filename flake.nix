@@ -5,13 +5,12 @@
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+
     
     stylix = {
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    #nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -35,7 +34,7 @@
           nixpkgs.lib.nixosSystem {
             modules = [
               #./configuration.nix
-              ./hosts/nixos-thinkpad
+              ./hosts/itani-lo-sahn
               home-manager.nixosModules.home-manager
               nix-flatpak.nixosModules.nix-flatpak
 
@@ -62,7 +61,6 @@
 
               }
 
-              #  inputs.nix-doom-emacs-unstraightened.homeModule
             ];
           };
         nox-nostra = let
@@ -74,6 +72,7 @@
               home-manager.nixosModules.home-manager
               nix-flatpak.nixosModules.nix-flatpak
               stylix.nixosModules.stylix
+
               {
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;
@@ -96,7 +95,6 @@
 
               }
 
-              #  inputs.nix-doom-emacs-unstraightened.homeModule
             ];
           }; 
         };
