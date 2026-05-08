@@ -1,4 +1,5 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, osConfig, ... }:
+lib.mkIf (osConfig.networking.hostName == "nox-nostra")
 {
 
   xdg.configFile."wayle" = {

@@ -2,6 +2,8 @@
   config,
   pkgs,
   inputs,
+  lib,
+  #nixosConfig,
   ...
 }:
 
@@ -79,16 +81,6 @@
     protonmail-desktop
     signal-desktop
   ];
-
-  #programs.doom-emacs = {
-  #  enable = true;
-  #  doomDir = inputs.doom-config;
-  #};
-
-  
-
-  
-
 
   imports = [
     ./shared/terminal/shell.nix
