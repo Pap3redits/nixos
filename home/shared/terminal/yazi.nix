@@ -26,7 +26,7 @@
         dark = "rose-pine";
       };
     };
-    flavors = {rose-pine = ../conf/yazi/rose-pine.yazi;};
+    flavors = {rose-pine = ../../conf/yazi/rose-pine.yazi;};
 
   };
 

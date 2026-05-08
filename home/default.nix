@@ -85,15 +85,7 @@
   #  doomDir = inputs.doom-config;
   #};
 
-  programs.git = {
-    enable = true;
-    settings = {
-      user = {
-        name = "Christian Schmidt";
-        email = "pap3redits@gmail.com";
-      };
-    };
-  };
+  
 
   
 
@@ -113,12 +105,6 @@
   #enables bluetooth audio control
   services.mpris-proxy.enable = true;
 
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.rose-pine-cursor;
-    name = "BreezeX-RosePine-Linux";
-    size = 16;
-  };
   
 
   home.stateVersion = "25.05";
