@@ -99,6 +99,8 @@
     ./shared/terminal/nvim.nix
     ./shared/terminal/btop.nix
     ./shared/terminal/fzf.nix
+    ./shared/git.nix
+    ../hosts/nox-nostra/wayle.nix
     ./ui/hyprland_test.nix
   ];
   

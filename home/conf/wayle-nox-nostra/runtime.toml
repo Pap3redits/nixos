@@ -1,0 +1,32 @@
+[bar]
+button-icon-size = 0.75
+button-label-size = 0.75
+
+[[bar.layout]]
+center = ["media"]
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+    "ram",
+    "cpu",
+]
+monitor = "*"
+right = [
+    "systray",
+    "bluetooth",
+    "network",
+    "volume",
+    "clock",
+    "notifications",
+]
+show = true
+
+[modules.clock]
+format = "%a %b %d %R"
+
+[modules.weather]
+location = "martinsburg"
+units = "imperial"
+
+[wallpaper]
+engine-enabled = false
