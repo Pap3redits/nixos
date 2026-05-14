@@ -30,7 +30,7 @@
     {
 
       nixosConfigurations = {
-        nixos-thinkpad = let
+        itani-lo-sahn = let
         in 
           nixpkgs.lib.nixosSystem {
             modules = [
@@ -38,6 +38,7 @@
               ./hosts/itani-lo-sahn
               home-manager.nixosModules.home-manager
               nix-flatpak.nixosModules.nix-flatpak
+              stylix.nixosModules.stylix
 
               {
                 home-manager.useGlobalPkgs = true;
