@@ -35,11 +35,7 @@
     enable = true;
     powertop.enable = true;
   };
-  
-  services.logind.settings.Login = {
-    HandleLidSwitch = "suspend";
-    HandleLidSwitchExternalPower = "lock";
-  };
+
 
 
   # This value determines the NixOS release from which the default
