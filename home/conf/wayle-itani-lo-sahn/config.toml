@@ -1,0 +1,55 @@
+# Wayle configuration file
+[bar]
+button-icon-size = 0.75
+button-label-size = 0.75
+
+[[bar.layout]]
+center = ["media"]
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+    "ram",
+    "cpu",
+]
+monitor = "*"
+right = [
+    "systray",
+    "bluetooth",
+    "network",
+    "volume",
+    "clock",
+    "notifications",
+]
+show = true
+
+[[bar.layout]]
+center = ["cava"]
+left = ["hyprland-workspaces"]
+monitor = "DP-10"
+right = []
+show = true
+
+[modules.clock]
+format = "%a %b %d %R"
+
+[modules.hyprland-workspaces]
+show-special = false
+
+[modules.weather]
+location = "martinsburg"
+units = "imperial"
+
+[styling.palette]
+bg = "#191724"
+blue = "#9ccfd8"
+elevated = "#26233a"
+fg = "#e0def4"
+fg-muted = "#908caa"
+green = "#31748f"
+primary = "#c4a7e7"
+red = "#eb6f92"
+surface = "#1f1d2e"
+yellow = "#f6c177"
+
+[wallpaper]
+engine-enabled = false
