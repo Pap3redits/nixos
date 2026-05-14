@@ -18,6 +18,7 @@ right = [
     "network",
     "volume",
     "clock",
+    "battery",
     "notifications",
 ]
 show = true
