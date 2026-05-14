@@ -2,32 +2,6 @@
 button-icon-size = 0.75
 button-label-size = 0.75
 
-[[bar.layout]]
-center = ["media"]
-left = [
-    "dashboard",
-    "hyprland-workspaces",
-    "ram",
-    "cpu",
-]
-monitor = "*"
-right = [
-    "systray",
-    "bluetooth",
-    "network",
-    "volume",
-    "clock",
-    "notifications",
-]
-show = true
-
-[[bar.layout]]
-center = ["cava"]
-left = ["hyprland-workspaces"]
-monitor = "DP-10"
-right = []
-show = true
-
 [modules.clock]
 format = "%a %b %d %R"
 

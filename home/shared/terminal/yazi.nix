@@ -1,14 +1,14 @@
 {
   pkgs,
   lib,
-  inputs,
   ...
 }:
 {
 
-  home.packages = with pkgs.yaziPlugins; [
-    mount
-  ];
+  #home.packages = with pkgs.yaziPlugins; [
+   # mount
+  #  recycle-bin
+  #];
 
 
   programs.yazi = {

@@ -80,6 +80,10 @@
     walker
     protonmail-desktop
     signal-desktop
+    davinci-resolve
+    mediainfo
+    ffmpeg
+    usbutils
   ];
 
   imports = [
