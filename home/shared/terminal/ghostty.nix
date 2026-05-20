@@ -20,6 +20,8 @@
         cursor-style-blink = false;
         shell-integration-features = "no-cursor";
 
+        
+
       };
   };
 }

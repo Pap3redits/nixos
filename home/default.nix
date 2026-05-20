@@ -15,7 +15,6 @@
   home.packages = with pkgs; [
     ripgrep
     kitty
-    eza
     bat
     gcc
     lazygit
