@@ -15,13 +15,13 @@
     ./hardware-configuration.nix
     ../shared/imports.nix
   ];
-
-  programs.bash.interactiveShellInit = ''
-    if ! [ "$TERM" = "dumb" ] && [ -z "$BASH_EXECUTION_STRING" ]; then
-      exec nu
-    fi
-  '';
-
+  /*
+    programs.bash.interactiveShellInit = ''
+      if ! [ "$TERM" = "dumb" ] && [ -z "$BASH_EXECUTION_STRING" ]; then
+        exec nu
+      fi
+    '';
+  */
 
   #TODO: change host name for new config
   networking.hostName = "nox-nostra"; # Define your hostname.

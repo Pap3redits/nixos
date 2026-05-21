@@ -19,10 +19,8 @@
     };
     settings = {
       show_banner = false;
-    
-    };
 
-    
+    };
 
   };
 
@@ -52,7 +50,7 @@
 
   programs.eza = {
     enable = true;
-    #enableNushellIntegration = true;
+    enableNushellIntegration = true;
   };
 
   programs.starship = {
