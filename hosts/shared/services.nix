@@ -14,7 +14,7 @@
    services.xserver.enableTCP = true;
 
    services.tailscale = {
-    enable = true;
+    enable = false;
     useRoutingFeatures = "client";
 
   };
