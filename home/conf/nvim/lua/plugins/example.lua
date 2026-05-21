@@ -72,6 +72,7 @@ return {
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
+        nil_ls = {},
       },
     },
   },
@@ -134,6 +135,7 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "nix",
       },
     },
   },
