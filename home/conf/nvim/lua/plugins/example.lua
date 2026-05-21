@@ -138,6 +138,9 @@ return {
         "nix",
       },
     },
+    if have ("hypr") then
+      add("hyprlang")
+    end
   },
 
   -- since `vim.tbl_deep_extend`, can only merge tables and not lists, the code above
