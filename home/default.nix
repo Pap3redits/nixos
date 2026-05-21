@@ -86,6 +86,7 @@
       statix #nvim
       tsx #nvim
       nixfmt #nvim
+      emacs
     ];
   };
 
