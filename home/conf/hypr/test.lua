@@ -19,10 +19,7 @@ hl.monitor({
 })
 
 -- Program variables
-local terminal = "ghostty -e nu"
-local fileManager = terminal .. "-e yazi"
-local menu = "walker"
-local browser = "flatpak run app.zen_browser.zen"
+
 
 -- Autostart
 hl.on("hyprland.start", function ()
@@ -156,3 +153,4 @@ hl.device({
     name        = "epic-mouse-v1",
     sensitivity = -0.5,
 })
+
