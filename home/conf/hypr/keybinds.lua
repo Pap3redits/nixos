@@ -10,7 +10,7 @@ hl.bind(mainMod .. " + return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. "+ SHIFT + RETURN", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("ghostty --class=com.example.clipse -e clipse"))
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ maximize, toggle}))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = toggle}))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ fullscreen, toggle}))
 hl.bind(mainMod .. " + ALT + F", hl.dsp.window.float({toggle}))
 
