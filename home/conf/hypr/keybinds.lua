@@ -2,8 +2,8 @@ local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + return", hl.dsp.exec_cmd{terminal})
-hl.bind(mainMod .." + W", hl.dsp.exec_cmd(browser))
-hl.bind(mainMod .." + F", hl.dsp,exec_cmd(fullscreen))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + F", hl.dsp,exec_cmd(fullscreen))
 
 
 -- change workspaces

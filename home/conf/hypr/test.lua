@@ -1,26 +1,26 @@
 
 -- Imports
-require("~/.config/hypr/rose-pine.conf")
-require("./keybinds.lua")
+require("rose-pine")
+require("keybinds")
 
 -- Monitor setup
 hl.monitor({
   output = "",
   mode = "preferred",
-  position = "auto"
+  position = "auto",
   scale = "auto",
 })
 hl.monitor({
   output = "DP-10",
   mode = "preferred",
   position = "auto",
-  scale = "auto"
-  transform = "1"
-}
+  scale = "auto",
+  transform = 1,
+})
 
 -- Program variables
 local terminal = "ghostty -e nu"
-local fileManager = terminal "-e yazi"
+local fileManager = terminal .. "-e yazi"
 local menu = "walker"
 local browser = "flatpak run app.zen_browser.zen"
 
@@ -32,15 +32,15 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("hyprpaper")
   hl.exec_cmd("elephant &")
   hl.exec_cmd("clipse -listen")
-  hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme "orchis-dark"")
-  hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"")
-  hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-theme "${config.home.pointerCursor.name}"")
+  hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme 'orchis-dark'")
+  hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
+  hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-theme '${config.home.pointerCursor.name}'")
   hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-size ${toString home.pointerCursor.size}")
 end)
 
 -- Environment variables
-hl.env("QT_QPA_PLATFORMTHEME,qt6ct")
-hl.env("AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1") -- not sure if still needed
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("AQ_DRM_DEVICES", "/dev/dri/card0:/dev/dri/card1") -- not sure if still needed
 
 -- General window appearance
 hl.config({
@@ -51,8 +51,8 @@ hl.config({
     border_size = 2,
 
     col = {
-      active_border = rose
-      inactive_border = muted
+      active_border = rose,
+      inactive_border = muted,
     },
 
     resize_on_border = false,
@@ -122,7 +122,7 @@ hl.config({
   },
 
   master = {
-    new_status = "master"
+    new_status = "master",
   },
 
   scrolling = {
@@ -147,6 +147,7 @@ hl.config({
 
     touchpad = {
         natural_scroll = true,
+    },
   },
  
 
