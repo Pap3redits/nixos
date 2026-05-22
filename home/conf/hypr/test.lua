@@ -1,6 +1,7 @@
 
 -- Imports
 require("~/.config/hypr/rose-pine.conf")
+require("./keybinds.lua")
 
 -- Monitor setup
 hl.monitor({
@@ -117,7 +118,6 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 
 hl.config({
   dwindle = {
-    pseudotile = true,
     preserve_split = true,
   },
 
@@ -126,6 +126,32 @@ hl.config({
   },
 
   scrolling = {
-    full
+    fullscreen_on_one_column = true,
   },
+
+  misc = {
+    force_default_wallpaper = 0,
+    disable_hyprland_logo = true,
+  },
+
+  input = {
+    kb_layout = "us",
+    kb_variant = "",
+    kb_model   = "",
+    kb_options = "",
+    kb_rules   = "",
+
+    follow_mouse = 1,
+
+    sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
+
+    touchpad = {
+        natural_scroll = true,
+  },
+ 
+
+})
+hl.device({
+    name        = "epic-mouse-v1",
+    sensitivity = -0.5,
 })
