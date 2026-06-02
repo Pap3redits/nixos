@@ -9,5 +9,6 @@
     cursor.name = "BreezeX-RosePine-Linux";
     cursor.package = pkgs.rose-pine-cursor;
     cursor.size = 20;
+    targets.kmscon.enable = false;
   };
 }
