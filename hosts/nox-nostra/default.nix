@@ -23,7 +23,6 @@
     '';
   */
 
-  #TODO: change host name for new config
   networking.hostName = "nox-nostra"; # Define your hostname.
 
   hardware.amdgpu.opencl.enable = true;

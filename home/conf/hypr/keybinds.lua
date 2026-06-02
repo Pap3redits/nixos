@@ -1,6 +1,6 @@
 local mainMod = "SUPER"
 local terminal = "ghostty" 
-local fileManager = "ghostty -e yazi"--todo update later
+local fileManager = "ghostty -e yazi"
 local menu = "walker"
 local browser = "flatpak run app.zen_browser.zen"
 
