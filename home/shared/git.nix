@@ -1,10 +1,4 @@
 {
-  config,
-  pkgs,
-  inputs,
-  ...
-}:
-{
   programs.git = {
     enable = true;
     settings = {
@@ -19,11 +13,6 @@
       signByDefault = true;
     };
 
-  };
-
-  programs.ssh = {
-    enable = true;
-    addKeysToAgent = "yes";
   };
 
 }
