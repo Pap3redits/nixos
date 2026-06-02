@@ -1,4 +1,3 @@
-{ config, pkgs, ... }:
 {
 
   services.elephant.enable = true;
@@ -13,15 +12,15 @@
     layout = "us";
     variant = "";
   };
-  
-   services.xserver.enableTCP = true;
 
-   services.tailscale = {
+  services.xserver.enableTCP = true;
+
+  services.tailscale = {
     enable = false;
     useRoutingFeatures = "client";
 
   };
-  
+
   services.mullvad-vpn = {
     enable = true;
   };
@@ -29,7 +28,7 @@
   services.udisks2.enable = true;
 
   services.udev.extraRules = ''
-  KERNEL=="uinput", MODE="777", GROUP="input", OPTIONS+="static_node=uinput"
+    KERNEL=="uinput", MODE="777", GROUP="input", OPTIONS+="static_node=uinput"
   '';
 
   services.upower.enable = true;
@@ -53,5 +52,5 @@
 
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "christian" ];
-  
+
 }
