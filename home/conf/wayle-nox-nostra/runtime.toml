@@ -7,6 +7,7 @@ format = "%a %b %d %R"
 
 [modules.hyprland-workspaces]
 show-special = false
+urgent-show = false
 
 [modules.systray]
 blacklist = [
