@@ -72,7 +72,6 @@
           modules = [
             #./configuration.nix
             ./hosts/nox-nostra
-            #./hosts/nox-nostra/wayle.nix
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix

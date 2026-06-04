@@ -91,7 +91,6 @@
       zed-editor
     ];
   };
-
   imports = [
     ./shared/terminal/shell.nix
     ./shared/terminal/ghostty.nix
@@ -102,8 +101,6 @@
     ./shared/terminal/btop.nix
     ./shared/terminal/fzf.nix
     ./shared/git.nix
-    ../hosts/nox-nostra/wayle.nix
-    ../hosts/itani-lo-sahn/wayle.nix
     ./ui/hyprland_test.nix
   ];
 

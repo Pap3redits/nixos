@@ -16,13 +16,12 @@
     kdePackages.qtmultimedia # needed for the sddm theme
     nfs-utils
     clipse
-    wayle
     quickshell
   ];
 
   programs.neovim = {
-  enable = true;
-  defaultEditor = true;
+    enable = true;
+    defaultEditor = true;
   };
 
   programs.steam = {
@@ -36,5 +35,5 @@
     enableSSHSupport = true;
   };
 
-
 }
+
