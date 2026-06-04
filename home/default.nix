@@ -105,7 +105,6 @@
     ../hosts/nox-nostra/wayle.nix
     ../hosts/itani-lo-sahn/wayle.nix
     ./ui/hyprland_test.nix
-    ./ui/noctalia.nix
   ];
 
   #enables bluetooth audio control

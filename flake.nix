@@ -15,20 +15,19 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-  };
 
-  noctalia = {
-    url = "github:noctalia-dev/noctalia-shell";
-    inputs.nixpkgs.follows = "nixpkgs";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell/v5";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    {
+    inputs@{
       nix-flatpak,
       nixpkgs,
       home-manager,
       stylix,
-      noctalia,
       ...
     }:
     {
@@ -69,6 +68,7 @@
           ];
         };
         nox-nostra = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
           modules = [
             #./configuration.nix
             ./hosts/nox-nostra
@@ -76,7 +76,7 @@
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
-            noctalia.homeModules.default
+            ./home/ui/noctalia.nix
 
             {
               home-manager = {

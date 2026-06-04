@@ -23,7 +23,8 @@ hl.monitor({
 
 -- Autostart
 hl.on("hyprland.start", function ()
-  hl.exec_cmd("wayle panel start")
+  --hl.exec_cmd("wayle panel start")
+  hl.exec_cmd("qs -c noctalia-shell")
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("walker --gapplication-service")
   hl.exec_cmd("hyprpaper")

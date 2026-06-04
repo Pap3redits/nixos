@@ -1,11 +1,12 @@
 local mainMod = "SUPER"
 local terminal = "ghostty" 
 local fileManager = "ghostty -e yazi"
-local menu = "walker"
+local ipc = "qs -c noctalia-shell ipc call"
+local menu = "noctalia msg panel-toggle launcher"
 local browser = "flatpak run app.zen_browser.zen"
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
 hl.bind(mainMod .. " + return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. "+ SHIFT + RETURN", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))

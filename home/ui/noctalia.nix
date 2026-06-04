@@ -1,59 +1,75 @@
+/*
+  { pkgs, inputs, ... }:
+  {
+    # install package
+    environment.systemPackages = with pkgs; [
+      inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+      # ... maybe other stuff
+    ];
+  }
+*/
+
 { pkgs, inputs, ... }:
 {
   home-manager.users.christian = {
-    # import the home manager module
     imports = [
       inputs.noctalia.homeModules.default
     ];
 
-    # configure options
-    programs.noctalia-shell = {
+    programs.noctalia = {
       enable = true;
       settings = {
-        # configure noctalia here
+        settingsVersion = 0;
         bar = {
-          density = "compact";
-          position = "right";
-          showCapsule = false;
+          barType = "simple";
+          position = "top";
           widgets = {
             left = [
               {
                 id = "ControlCenter";
-                useDistroLogo = true;
               }
               {
-                id = "Network";
+                id = "Workspace";
               }
               {
-                id = "Bluetooth";
+                id = "SystemMonitor";
               }
             ];
             center = [
               {
-                hideUnoccupied = false;
-                id = "Workspace";
-                labelMode = "none";
+                id = "MediaMini";
               }
             ];
             right = [
               {
-                alwaysShowPercentage = false;
-                id = "Battery";
-                warningThreshold = 30;
+                id = "Tray";
               }
               {
-                formatHorizontal = "HH:mm";
-                formatVertical = "HH mm";
+                id = "Bluetooth";
+              }
+              {
+                id = "Volume";
+              }
+              {
                 id = "Clock";
-                useMonospacedFont = true;
-                usePrimaryColor = true;
+              }
+              {
+                id = "NotificationHistory";
               }
             ];
           };
+          mouseWheelAction = "none";
+          reverseScroll = false;
+          mouseWheelWrap = true;
+          middleClickAction = "none";
+          middleClickFollowMouse = false;
+          middleClickCommand = "";
+          rightClickAction = "controlCenter";
+          rightClickFollowMouse = true;
+          rightClickCommand = "";
+          screenOverrides = [ ];
         };
-
       };
-      # this may also be a string or a path to a JSON file.
     };
   };
 }

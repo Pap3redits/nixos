@@ -1,0 +1,62 @@
+settingsVersion = 0
+
+[bar]
+barType = "simple"
+middleClickAction = "none"
+middleClickCommand = ""
+middleClickFollowMouse = false
+mouseWheelAction = "none"
+mouseWheelWrap = true
+order = ["widgets"]
+position = "top"
+reverseScroll = false
+rightClickAction = "controlCenter"
+rightClickCommand = ""
+rightClickFollowMouse = true
+screenOverrides = []
+
+[bar.widgets]
+capsule = true
+center = ["media"]
+end = ["tray", "bluetooth", "volume", "clock", "notifications"]
+margin_ends = 10
+start = ["control-center", "workspaces"]
+
+[bar.widgets.monitor.DP-10]
+center = ["audio_visualizer"]
+end = []
+start = ["workspaces"]
+
+[[bar.widgets.left]]
+id = "ControlCenter"
+
+[[bar.widgets.left]]
+id = "Workspace"
+
+[[bar.widgets.left]]
+id = "SystemMonitor"
+
+[[bar.widgets.right]]
+id = "Tray"
+
+[[bar.widgets.right]]
+id = "Bluetooth"
+
+[[bar.widgets.right]]
+id = "Volume"
+
+[[bar.widgets.right]]
+id = "Clock"
+
+[[bar.widgets.right]]
+id = "NotificationHistory"
+
+[shell]
+settings_show_advanced = true
+telemetry_enabled = false
+
+[theme]
+builtin = "Rosé Pine"
+
+[widget.tray]
+drawer = true
