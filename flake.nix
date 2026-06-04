@@ -17,6 +17,11 @@
     };
   };
 
+  noctalia = {
+    url = "github:noctalia-dev/noctalia-shell";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+
   outputs =
     {
       nix-flatpak,
@@ -70,6 +75,7 @@
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
+            ./home/ui/noctalia.nix
 
             {
               home-manager = {

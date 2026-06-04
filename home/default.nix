@@ -5,7 +5,7 @@
 
 {
 
-  home = { 
+  home = {
     username = "christian";
     homeDirectory = "/home/christian";
 
@@ -81,12 +81,14 @@
       ffmpeg
       usbutils
       unzip
-      nodejs #nvim
-      cargo #nvim
-      statix #nvim
-      tsx #nvim
-      nixfmt #nvim
+      nodejs # nvim
+      cargo # nvim
+      statix # nvim
+      tsx # nvim
+      nixfmt # nvim
       emacs
+      streamlink-twitch-gui-bin
+      zed-editor
     ];
   };
 
@@ -104,11 +106,9 @@
     ../hosts/itani-lo-sahn/wayle.nix
     ./ui/hyprland_test.nix
   ];
-  
+
   #enables bluetooth audio control
   services.mpris-proxy.enable = true;
-
-  
 
   home.stateVersion = "25.05";
 }
