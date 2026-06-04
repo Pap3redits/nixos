@@ -59,6 +59,10 @@ max_length = 500
 [shell]
 settings_show_advanced = true
 telemetry_enabled = false
+polkit_agent = true
+
+[shell.panel]
+open_near_click_control_center = true
 
 [theme]
 builtin = "Rosé Pine"
@@ -66,11 +70,11 @@ builtin = "Rosé Pine"
 [widget.tray]
 drawer = true
 
-[shell.panel]
-open_near_click_control_center = true
-
 [weather]
 unit = "imperial"
 enabled = true
 refresh_minutes = 30
 effects = true
+
+[notification]
+monitors = ["DP-9"]
