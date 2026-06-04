@@ -1,9 +1,27 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
 
   nixpkgs.config.allowUnfree = true;
-  programs.hyprland.enable = true;
-  programs.hyprland.withUWSM = true;
+  programs = {
+    hyprland.enable = true;
+    hyprland.withUWSM = true;
+
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+    };
+
+    steam = {
+      enable = true;
+      remotePlay.openFirewall = true;
+    };
+
+    mtr.enable = true;
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
+  };
 
   nix.settings.experimental-features = [
     "nix-command"
@@ -17,23 +35,7 @@
     nfs-utils
     clipse
     quickshell
+    evtest
   ];
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-  };
-
-  programs.mtr.enable = true;
-  programs.gnupg.agent = {
-    enable = true;
-    enableSSHSupport = true;
-  };
-
 }
-

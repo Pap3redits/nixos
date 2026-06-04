@@ -1,5 +1,8 @@
 settingsVersion = 0
 
+[location]
+address = "Ashbrun, US"
+
 [bar]
 barType = "simple"
 middleClickAction = "none"
@@ -49,6 +52,10 @@ id = "Clock"
 [[bar.widgets.right]]
 id = "NotificationHistory"
 
+[widget.media]
+hide_when_no_media = true
+max_length = 500
+
 [shell]
 settings_show_advanced = true
 telemetry_enabled = false
@@ -61,3 +68,9 @@ drawer = true
 
 [shell.panel]
 open_near_click_control_center = true
+
+[weather]
+unit = "imperial"
+enabled = true
+refresh_minutes = 30
+effects = true
