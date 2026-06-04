@@ -73,7 +73,6 @@
       rose-pine-icon-theme
       hyprtoolkit
       base16-schemes
-      walker
       protonmail-desktop
       signal-desktop
       davinci-resolve
@@ -88,7 +87,6 @@
       nixfmt # nvim
       emacs
       streamlink-twitch-gui-bin
-      zed-editor
     ];
   };
   imports = [

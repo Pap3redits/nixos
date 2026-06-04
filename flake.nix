@@ -35,7 +35,6 @@
       nixosConfigurations = {
         itani-lo-sahn = nixpkgs.lib.nixosSystem {
           modules = [
-            #./configuration.nix
             ./hosts/itani-lo-sahn
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
@@ -70,13 +69,11 @@
         nox-nostra = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
-            #./configuration.nix
             ./hosts/nox-nostra
+            ./home/ui/noctalia.nix
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
-            ./home/ui/noctalia.nix
-
             {
               home-manager = {
                 useGlobalPkgs = true;
