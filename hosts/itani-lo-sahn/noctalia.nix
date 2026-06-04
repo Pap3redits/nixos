@@ -7,7 +7,7 @@
 
     programs.noctalia = {
       enable = true;
-      settings = ../conf/noctalia.toml;
+      settings = ../../home/conf/noctalia/noctalia-itani-lo-sahn.toml;
     };
   };
 }
