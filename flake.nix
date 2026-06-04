@@ -28,6 +28,7 @@
       nixpkgs,
       home-manager,
       stylix,
+      noctalia,
       ...
     }:
     {
@@ -75,7 +76,7 @@
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
-            ./home/ui/noctalia.nix
+            noctalia.homeModules.default
 
             {
               home-manager = {
