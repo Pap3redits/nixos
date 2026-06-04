@@ -70,7 +70,7 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./hosts/nox-nostra
-            ./home/ui/noctalia.nix
+            # ./home/ui/noctalia.nix
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix

@@ -1,0 +1,76 @@
+settingsVersion = 0
+
+[location]
+address = "Ashbrun, US"
+
+[bar]
+barType = "simple"
+middleClickAction = "none"
+middleClickCommand = ""
+middleClickFollowMouse = false
+mouseWheelAction = "none"
+mouseWheelWrap = true
+order = ["widgets"]
+position = "top"
+reverseScroll = false
+rightClickAction = "controlCenter"
+rightClickCommand = ""
+rightClickFollowMouse = true
+screenOverrides = []
+
+[bar.widgets]
+capsule = true
+center = ["media"]
+end = ["tray", "bluetooth", "volume", "clock", "notifications"]
+margin_ends = 10
+start = ["workspaces", "cpu", "ram"]
+
+[bar.widgets.monitor.DP-10]
+center = ["audio_visualizer"]
+end = []
+start = ["workspaces"]
+
+
+[[bar.widgets.left]]
+id = "Workspace"
+
+[[bar.widgets.left]]
+id = "SystemMonitor"
+
+[[bar.widgets.right]]
+id = "Tray"
+
+[[bar.widgets.right]]
+id = "Bluetooth"
+
+[[bar.widgets.right]]
+id = "Volume"
+
+[[bar.widgets.right]]
+id = "Clock"
+
+[[bar.widgets.right]]
+id = "NotificationHistory"
+
+[widget.media]
+hide_when_no_media = true
+max_length = 500
+
+[shell]
+settings_show_advanced = true
+telemetry_enabled = false
+
+[theme]
+builtin = "Rosé Pine"
+
+[widget.tray]
+drawer = true
+
+[shell.panel]
+open_near_click_control_center = true
+
+[weather]
+unit = "imperial"
+enabled = true
+refresh_minutes = 30
+effects = true
