@@ -95,11 +95,12 @@
     ./shared/terminal/zoxide.nix
     ./shared/terminal/yazi.nix
     ./shared/terminal/clipse.nix
-    ./shared/terminal/nvim.nix
+    # ./shared/terminal/nvim.nix
     ./shared/terminal/btop.nix
     ./shared/terminal/fzf.nix
     ./shared/git.nix
     ./ui/hyprland_test.nix
+    ./shared/terminal/nvf.nix
   ];
 
   #enables bluetooth audio control

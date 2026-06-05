@@ -20,6 +20,8 @@
       url = "github:noctalia-dev/noctalia-shell/v5";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nvf.url = "github:notashelf/nvf";
   };
 
   outputs =
@@ -28,6 +30,7 @@
       nixpkgs,
       home-manager,
       stylix,
+      nvf,
       ...
     }:
     {
@@ -75,6 +78,7 @@
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
+            nvf.homeManagerModules.default
             {
               home-manager = {
                 useGlobalPkgs = true;
