@@ -10,14 +10,13 @@
         lsp = {
           enable = true;
         };
+        languages.nix = {
+          enable = true;
+          format.enable = true;
+          lsp.enable = true;
+          treesitter.enable = true;
+        };
       };
     };
-  };
-
-  config.vim.languages.nix = {
-    enable = true;
-    format.enable = true;
-    lsp.enable = true;
-    treesitter.enable = true;
   };
 }

@@ -8,8 +8,8 @@
     ./services.nix
     ./boot.nix
     ./env.nix
+    ./nvf.nix
   ];
-  
-
 
 }
+
