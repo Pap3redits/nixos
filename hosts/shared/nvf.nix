@@ -11,14 +11,17 @@
         vimAlias = true;
         lsp.enable = true;
         lsp.trouble.enable = true;
+        lsp.lspconfig.enable = true;
+
+        lazy.enable = true;
+        lazy.enableLznAutoRequire = false;
+
 
 
         statusline.lualine.enable = true;
         telescope.enable = true;
-        autocomplete.nvim-cmp.enable = true;
 
         languages = {
-          enableTreesitter = true;
           nix.enable = true;
           nix.lsp.enable = true;
           nix.format.enable = true;
@@ -26,9 +29,11 @@
         };
         
         mini.ai.enable = true;
+        mini.pairs.enable = true;
+        mini.icons.enable = true;
         binds.whichKey.enable = true;
         tabline.nvimBufferline.enable = true;
-        mini.icons.enable = true;
+        
 
         terminal.toggleterm.enable = true;
         terminal.toggleterm.lazygit.enable = true;
@@ -42,31 +47,71 @@
           explorer = {};
           picker = {};
           input = {};
-          dashboard = {};
+          dashboard = {
+            preset = {
+              keys = [
+                {
+                  key = "f";
+                  desc = "Find File";
+                  action = ":lua Snacks.dashboard.pick('files')";
+                }
+              ];
+            };
+            sections = [
+              { section = "header"; }
+              {
+                pane = 1;
+                title = "Actions";
+                section = "keys";
+                gap = 1;
+                padding = 1;
+              }
+              {
+                title = "Projects";
+                pane = 1;
+                key = "p";
+                action = "<cmd>Telescope project<CR>";
+
+              }
+              {
+                pane = 1;
+                title = "Recent Files";
+                section = "recent_files";
+                limit = 8;
+              }
+            ];
+          };
           terminal = {};
           toggle = {};
           lazygit = {};
         };
-
         
+        git.gitsigns.enable = true;
+
+        formatter.conform-nvim.enable = true;
+
 
         utility.grug-far-nvim.enable = true;
+        utility.motion.flash-nvim.enable = true;
+
+        ui.noice.enable = true;
+
+        autocomplete.blink-cmp.enable = true;
+
 
         notes.todo-comments.enable = true;
 
-        projects.project-nvim.enable = true;
-        dashboard.dashboard-nvim.enable = true;
+        projects.project-nvim = {
+          enable = true;
 
-        /*keymaps = [
-          {
-            desc = "Explorer";
-            mode = "n";
-            key = "<leader>e";
-            action = ":lua Snacks.explorer.open()<CR>";
+          setupOpts = {
+            detection_methods = [ "pattern" ];
+            #patterns = [ ".git" "flake.nix" "package.json" ];
 
-          }
-        ];*/
-    };
+            show_hidden = false;
+          };
+        };
+      };
     };
   };
 }

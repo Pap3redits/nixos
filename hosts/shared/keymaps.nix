@@ -1,5 +1,5 @@
 {
-  programs.nvf.vim.keymaps = [
+  programs.nvf.settings.vim.keymaps = [
     {
       desc = "Explorer";
       mode = "n";
