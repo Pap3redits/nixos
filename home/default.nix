@@ -100,7 +100,6 @@
     ./shared/terminal/fzf.nix
     ./shared/git.nix
     ./ui/hyprland_test.nix
-    ./shared/terminal/nvf.nix
   ];
 
   #enables bluetooth audio control

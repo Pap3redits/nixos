@@ -78,7 +78,7 @@
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
-            nvf.homeManagerModules.default
+            nvf.nixosModules.default
             {
               home-manager = {
                 useGlobalPkgs = true;
