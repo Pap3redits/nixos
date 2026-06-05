@@ -40,8 +40,8 @@ hl.env("AQ_DRM_DEVICES", "/dev/dri/card0:/dev/dri/card1") -- not sure if still n
 -- General window appearance
 hl.config({
   general = {
-    gaps_in = 5,
-    gaps_out = 5,
+    gaps_in = 10,
+    gaps_out = 10,
 
     border_size = 2,
 
