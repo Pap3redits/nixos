@@ -25,7 +25,7 @@ hl.monitor({
 hl.on("hyprland.start", function ()
   hl.exec_cmd("wayle panel start")
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
-  hl.exec_cmd("walker --gapplication-service &")
+  hl.exec_cmd("walker --gapplication-service")
   hl.exec_cmd("hyprpaper")
   hl.exec_cmd("elephant &")
   hl.exec_cmd("clipse -listen")
@@ -78,6 +78,7 @@ hl.config({
       passes = 1,
       vibrancy = 0.1696,
     },
+
   },
 
   animations = {
@@ -137,7 +138,7 @@ hl.config({
     kb_model   = "",
     kb_options = "",
     kb_rules   = "",
-
+    numlock_by_default = true,
     follow_mouse = 1,
 
     sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.

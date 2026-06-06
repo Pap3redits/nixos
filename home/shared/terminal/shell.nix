@@ -1,28 +1,7 @@
 { config, pkgs, ... }:
 {
 
-  programs.nushell = {
-    enable = true;
-    shellAliases = {
-      nrs = "nh os switch";
-      nixconfig = "sudo -E nvim /etc/nixos/";
-      sr = "sudo reboot now";
-      ssn = "sudo shutdown now";
-      # File system
-      #ls = "eza -lh --group-directories-first --icons=auto";
-      #lsa = "ls -a:";
-      lt = "eza --tree --level=2 --long --icons --git";
-      lta = "lt -a";
-      ff = "fzf --preview 'bat --style=numbers --color=always {}'";
-      cd = "z";
-      cp = "cpx";
-    };
-    settings = {
-      show_banner = false;
-
-    };
-
-  };
+  
 
   programs.bash = {
 
@@ -50,18 +29,11 @@
 
   programs.eza = {
     enable = true;
-    enableNushellIntegration = true;
   };
 
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
-    enableNushellIntegration = true;
-  };
-
-  programs.carapace = {
-    enable = true;
-    enableNushellIntegration = true;
   };
 
 }

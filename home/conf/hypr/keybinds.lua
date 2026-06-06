@@ -1,6 +1,6 @@
 local mainMod = "SUPER"
-local terminal = "ghostty -e nu" --todo figure out other solution
-local fileManager = "ghostty -e yazi"--todo update later
+local terminal = "ghostty" 
+local fileManager = "ghostty -e yazi"
 local menu = "walker"
 local browser = "flatpak run app.zen_browser.zen"
 
@@ -13,6 +13,8 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("ghostty --class=com.example.clipse -
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = toggle}))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ fullscreen, toggle}))
 hl.bind(mainMod .. " + ALT + F", hl.dsp.window.float({toggle}))
+hl.bind(mainMod .. " + P", hl.dsp.window.pin())
+hl.bind(mainMod .. " + A", hl.dsp.window.move({workspace = 8, follow = false}))
 
 --Special workspaces
 hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("music"))
