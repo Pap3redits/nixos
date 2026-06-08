@@ -1,3 +1,4 @@
+{lib, ...}:
 {  
   imports = [./keymaps.nix];
 
@@ -15,6 +16,15 @@
 
         lazy.enable = true;
         lazy.enableLznAutoRequire = false;
+
+
+        theme = {
+          enable = true;
+          transparent = lib.mkForce true;
+          name = lib.mkForce "rose-pine";
+          style = "main";
+        };
+
 
 
 

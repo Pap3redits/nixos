@@ -75,7 +75,7 @@
       base16-schemes
       protonmail-desktop
       signal-desktop
-      davinci-resolve
+      # davinci-resolve
       mediainfo
       ffmpeg
       usbutils
@@ -87,6 +87,7 @@
       nixfmt # nvim
       emacs
       streamlink-twitch-gui-bin
+      betterdiscord-installer
     ];
   };
   imports = [

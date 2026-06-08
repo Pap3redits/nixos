@@ -36,6 +36,7 @@
     clipse
     quickshell
     evtest
+    libsecret
   ];
 
 }
