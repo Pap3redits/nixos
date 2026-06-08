@@ -13,6 +13,11 @@
         lsp.enable = true;
         lsp.trouble.enable = true;
         lsp.lspconfig.enable = true;
+        options = {
+          tabstop = 2;
+          shiftwidth = 2;
+          expandtab = true;
+        };
 
         lazy.enable = true;
         lazy.enableLznAutoRequire = false;
@@ -43,6 +48,8 @@
         mini.icons.enable = true;
         binds.whichKey.enable = true;
         tabline.nvimBufferline.enable = true;
+        session.nvim-session-manager.enable = true;
+        session.nvim-session-manager.setupOpts.autoload_mode = "Disabled";
         
 
         terminal.toggleterm.enable = true;
@@ -58,36 +65,41 @@
           picker = {};
           input = {};
           dashboard = {
-            preset = {
-              keys = [
-                {
-                  key = "f";
-                  desc = "Find File";
-                  action = ":lua Snacks.dashboard.pick('files')";
-                }
-              ];
-            };
             sections = [
               { section = "header"; }
-              {
-                pane = 1;
-                title = "Actions";
-                section = "keys";
-                gap = 1;
-                padding = 1;
-              }
               {
                 title = "Projects";
                 pane = 1;
                 key = "p";
-                action = "<cmd>Telescope project<CR>";
-
+                action = ":lua Snacks.picker.projects()";
+                padding = 1;
+              }
+              {
+                title = "Find File";
+                pane = 1;
+                key = "f";
+                action = ":lua Snacks.dashboard.pick('files')";
+                padding = 1;
+              }
+              {
+                title = "New File";
+                pane = 1;
+                key = "n";
+                action = ":ene | startinsert";
+                padding = 1;
+              }
+              {
+                title = "Restore Session";
+                pane = 1;
+                key = "s";
+                action = ":SessionManager load_last_session";
+                padding = 1;
               }
               {
                 pane = 1;
                 title = "Recent Files";
-                section = "recent_files";
-                limit = 8;
+                key = "r";
+                action = ":lua Snacks.dashboard.pick('oldfiles')";
               }
             ];
           };
