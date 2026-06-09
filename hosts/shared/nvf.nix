@@ -47,7 +47,11 @@
         mini.pairs.enable = true;
         mini.icons.enable = true;
         binds.whichKey.enable = true;
-        tabline.nvimBufferline.enable = true;
+        tabline.nvimBufferline = {
+          enable = true;
+          setupOpts.options.always_show_bufferline = false;
+          setupOpts.options.numbers = "none";
+        };
         session.nvim-session-manager.enable = true;
         session.nvim-session-manager.setupOpts.autoload_mode = "Disabled";
         

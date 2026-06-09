@@ -21,7 +21,7 @@
       shell-integration-features = "no-cursor";
 
       #command = "/nix/store/*-user-environment/bin/nu";
-      shell-integration = "bash";
+      shell-integration = "zsh";
 
       background-opacity = .8;
 

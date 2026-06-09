@@ -56,6 +56,12 @@
       action = "<C-W>s";
     }
     {
+      desc = "Close Window";
+      mode = "n";
+      key = "<leader>wd";
+      action = "<C-W>q";
+    }
+    {
       desc = "Prev Buffer";
       mode = "n";
       key = "<S-h>";

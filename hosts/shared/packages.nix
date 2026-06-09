@@ -21,12 +21,17 @@
       enable = true;
       enableSSHSupport = true;
     };
+
+    zsh.enable = true;
   };
+  users.defaultUserShell = pkgs.zsh;
+
 
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
+
 
   environment.systemPackages = with pkgs; [
     git
@@ -37,6 +42,8 @@
     quickshell
     evtest
     libsecret
+    zsh
+    sddm-astronaut
   ];
 
 }
