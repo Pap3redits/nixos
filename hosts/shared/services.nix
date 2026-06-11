@@ -1,4 +1,4 @@
-{callPackage, ...}:
+{pkgs, ...}:
 {
   services = {
 
@@ -7,8 +7,8 @@
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      theme = "rose-pine";
-      extraPackages = [callPackage ./sddm-rose-pine.nix];
+      extraPackages = [pkgs.sddm-astronaut];
+      theme = "sddm-astronaut-theme";
     };
 
     # Configure keymap in X11

@@ -44,6 +44,7 @@
     libsecret
     zsh
     sddm-astronaut
+    nix-init
   ];
 
 }

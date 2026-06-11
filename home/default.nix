@@ -88,6 +88,7 @@
       emacs
       streamlink-twitch-gui-bin
       betterdiscord-installer
+      easyeffects
     ];
   };
   imports = [

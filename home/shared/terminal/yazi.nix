@@ -5,11 +5,6 @@
 }:
 {
 
-  #home.packages = with pkgs.yaziPlugins; [
-   # mount
-  #  recycle-bin
-  #];
-
 
   programs.yazi = {
     enable = true;

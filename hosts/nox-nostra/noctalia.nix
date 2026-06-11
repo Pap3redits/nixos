@@ -3,6 +3,7 @@
   home-manager.users.christian = {
     imports = [
       inputs.noctalia.homeModules.default
+      ./fhs.nix
     ];
 
     programs.noctalia = {
