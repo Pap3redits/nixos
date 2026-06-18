@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 {
 
   nixpkgs.config.allowUnfree = true;
@@ -23,6 +24,9 @@
     };
 
     zsh.enable = true;
+
+    appimage.enable = true;
+    appimage.binfmt = true;
   };
   users.defaultUserShell = pkgs.zsh;
 
@@ -45,6 +49,7 @@
     zsh
     sddm-astronaut
     nix-init
+    gamescope
   ];
 
 }

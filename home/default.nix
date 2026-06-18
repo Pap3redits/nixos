@@ -89,6 +89,7 @@
       streamlink-twitch-gui-bin
       betterdiscord-installer
       easyeffects
+      lsfg-vk-ui
     ];
   };
   imports = [
