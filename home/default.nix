@@ -90,6 +90,7 @@
       betterdiscord-installer
       easyeffects
       lsfg-vk-ui
+      bottles
     ];
   };
   imports = [
