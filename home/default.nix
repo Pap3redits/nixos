@@ -90,11 +90,8 @@
       easyeffects
       lsfg-vk-ui
       bottles
-<<<<<<< HEAD
       runelite
       emacs
-=======
->>>>>>> 1551843 (update)
     ];
   };
   imports = [
