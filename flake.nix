@@ -105,6 +105,41 @@
 
           ];
         };
+        ira-domini = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./hosts/ira-domini
+            ./hosts/ira-domini/noctalia.nix
+            home-manager.nixosModules.home-manager
+            nix-flatpak.nixosModules.nix-flatpak
+            stylix.nixosModules.stylix
+            nvf.nixosModules.default
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                extraSpecialArgs = {
+                  xdg = {
+                    mime.enable = true;
+                    mimeApps = {
+                      enable = true;
+                      defaultApplications = {
+                        "text/html" = "app.zen_browser.zen.desktop";
+                        "x-scheme-handler/http" = "app.zen_browser.zen.desktop";
+                        "x-scheme-handler/https" = "app.zen_browser.zen.desktop";
+                        "x-scheme-handler/about" = "app.zen_browser.zen.desktop";
+                        "x-scheme-handler/unknown" = "app.zen_browser.zen.desktop";
+                      };
+                    };
+                  };
+                };
+                users.christian = ./home;
+              };
+
+            }
+
+          ];
+        };
       };
     };
 }
