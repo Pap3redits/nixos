@@ -50,6 +50,7 @@
     sddm-astronaut
     nix-init
     gamescope
+    lutris
   ];
 
 }

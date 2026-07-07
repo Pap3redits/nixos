@@ -38,8 +38,8 @@
       vulkan-tools
       obsidian
       appimage-run
-      wine
       winetricks
+      wine64
       protontricks
       pavucontrol
       tailscale
@@ -91,6 +91,8 @@
       easyeffects
       lsfg-vk-ui
       bottles
+      runelite
+      emacs
     ];
   };
   imports = [

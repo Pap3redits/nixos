@@ -8,6 +8,7 @@
       "org.jeffvli.feishin"
       "io.github.arunsivaramanneo.GPUViewer"
       "io.github.nokse22.minitext"
+      "com.adamcake.Bolt"
     ];
     update.auto = {
       enable = true;
