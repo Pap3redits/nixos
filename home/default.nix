@@ -40,6 +40,7 @@
       appimage-run
       winetricks
       wine64
+      wine-wayland
       protontricks
       pavucontrol
       tailscale
