@@ -75,7 +75,6 @@
       base16-schemes
       protonmail-desktop
       signal-desktop
-      # davinci-resolve
       mediainfo
       ffmpeg
       usbutils
