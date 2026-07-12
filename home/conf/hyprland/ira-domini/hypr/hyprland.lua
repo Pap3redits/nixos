@@ -47,7 +47,7 @@ hl.config({
 
     col = {
       active_border = rose,
-      inactive_border = muted
+      inactive_border = muted,
     },
 
     resize_on_border = false,
