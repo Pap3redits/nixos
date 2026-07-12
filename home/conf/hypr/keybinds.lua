@@ -60,6 +60,13 @@ hl.window_rule({
     float = true,
     size = {622, 652},
 })
+hl.window_rule({
+  name = "dicord",
+  match = {
+    class = "discord"
+  },
+  workspace = "2"
+})
 local suppressMaximizeRule = hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.
     name  = "suppress-maximize-events",

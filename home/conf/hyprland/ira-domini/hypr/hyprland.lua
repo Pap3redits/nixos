@@ -2,23 +2,8 @@
 -- Imports
 require("rose-pine")
 require("keybinds")
+require("monitors")
 
--- Monitor setup
-hl.monitor({
-  output = "",
-  mode = "preferred",
-  position = "auto",
-  scale = "1",
-})
-hl.monitor({
-  output = "DP-10",
-  mode = "preferred",
-  position = "auto",
-  scale = "auto",
-  transform = 1,
-})
-
--- Program variables
 
 
 -- Autostart

@@ -9,6 +9,7 @@
       "io.github.arunsivaramanneo.GPUViewer"
       "io.github.nokse22.minitext"
       "com.adamcake.Bolt"
+      "com.dec05eba.gpu_screen_recorder"
     ];
     update.auto = {
       enable = true;
