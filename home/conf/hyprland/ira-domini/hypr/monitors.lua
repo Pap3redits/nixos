@@ -42,3 +42,8 @@ hl.monitor({
   sdr_min_luminance = 0.2,
   sdr_max_luminance = 80,
 })
+
+hl.workspace_rule({ workspace = "1", monitor = "desc:LG Electronics LG ULTRAGEAR 407NTBK3M541", default = true, persistent = true, })
+hl.workspace_rule({ workspace = "2", monitor = "desc:Lenovo Group Limited T22i-20 V906L02M", default = true, persistent = true, })
+hl.workspace_rule({ workspace = "4", monitor = "desc:AOC 2369 ACLE59A000687", default = true, persistent = true, })
+hl.workspace_rule({ workspace = "3", monitor = "desc:Ancor Communications Inc VG248 G5LMQS102957", default = true, persistent = true, })
