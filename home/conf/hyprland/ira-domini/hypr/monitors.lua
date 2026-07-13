@@ -4,7 +4,7 @@ hl.monitor({
   output = "desc:LG Electronics LG ULTRAGEAR 407NTBK3M541",
   mode = "3840x2160@144",
   position = "4872x785",
-  scale = 1,
+  scale = 1.5,
   bitdepth = 10,
   cm = "srgb",
   sdrbrightness = 5,
@@ -15,7 +15,7 @@ hl.monitor({
 hl.monitor({
   output = "desc:Lenovo Group Limited T22i-20 V906L02M",
   mode = "1920x1080@60",
-  position = "8712x1025",
+  position = "7432x428",
   scale = 1,
   transform = 1,
   cm = "srgb",

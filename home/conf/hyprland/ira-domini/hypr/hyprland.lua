@@ -14,13 +14,15 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("clipse -listen")
   hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme 'orchis-dark'")
   hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
-  hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-theme '${config.home.pointerCursor.name}'")
-  hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-size ${toString home.pointerCursor.size}")
+  --hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-theme '${config.home.pointerCursor.name}'")
+  ---hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-size ${toString home.pointerCursor.size}")
 end)
 
 -- Environment variables
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 hl.env("AQ_DRM_DEVICES", "/dev/dri/card0:/dev/dri/card1") -- not sure if still needed
+hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
+hl.env("GDK_SCALE", "1.5")
 
 -- General window appearance
 hl.config({
@@ -67,6 +69,10 @@ hl.config({
   animations = {
     enabled = true,
   },
+
+  xwayland = {
+    force_zero_scaling = true
+  }
 })
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
