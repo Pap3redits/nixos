@@ -1,4 +1,5 @@
-{ config, ... }:
+{ config, pkgs, lib, osConfig, ... }:
+lib.mkIf (osConfig.networking.hostName == "nox-nostra")
 {
 
   #gtk.gtk4.theme = null;
@@ -10,7 +11,7 @@
   #};
 
   xdg.configFile."hypr" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/home/conf/hypr";
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/home/conf/hyprland/nox-nosrta/hypr";
     force = true;
     recursive = true;
   };
