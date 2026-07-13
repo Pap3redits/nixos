@@ -87,7 +87,6 @@
       nixfmt # nvim
       emacs
       streamlink-twitch-gui-bin
-      betterdiscord-installer
       easyeffects
       lsfg-vk-ui
       bottles
