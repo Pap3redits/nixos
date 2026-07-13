@@ -9,6 +9,7 @@
     ./boot.nix
     ./env.nix
     ./nvf.nix
+    ./fsh.nix
   ];
 
 }
