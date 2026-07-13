@@ -104,11 +104,7 @@
     ./shared/terminal/btop.nix
     ./shared/terminal/fzf.nix
     ./shared/git.nix
-<<<<<<< HEAD
-    ./shared/emac.nix
-=======
     ./shared/emacs.nix
->>>>>>> e6aa675 (added doom emacs config)
     ./ui/hyprland-ira-domini.nix
     ./ui/hyprland-nox-nostra.nix
   ];
