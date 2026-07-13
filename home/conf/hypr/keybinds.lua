@@ -16,6 +16,7 @@ hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ fullscreen, toggle
 hl.bind(mainMod .. " + ALT + F", hl.dsp.window.float({toggle}))
 hl.bind(mainMod .. " + P", hl.dsp.window.pin())
 hl.bind(mainMod .. " + A", hl.dsp.window.move({workspace = 8, follow = false}))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("emacs"))
 
 --Special workspaces
 hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("music"))
@@ -51,6 +52,13 @@ hl.window_rule({
     },
     float = true,
     size = {500, 500},
+})
+hl.window_rule({
+    name = "runelite pnp",
+    match = {
+      title = "Picture in Picture"
+    },
+    float = true,
 })
 hl.window_rule({
     name = "clipse",
