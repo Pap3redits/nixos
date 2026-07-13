@@ -105,6 +105,7 @@
     ./shared/terminal/fzf.nix
     ./shared/git.nix
     ./ui/hyprland-ira-domini.nix
+    ./ui/hyprland-nox-nostra.nix
   ];
 
   #enables bluetooth audio control

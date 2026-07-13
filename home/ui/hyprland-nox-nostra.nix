@@ -11,7 +11,7 @@ lib.mkIf (osConfig.networking.hostName == "nox-nostra")
   #};
 
   xdg.configFile."hypr" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/home/conf/hyprland/nox-nosrta/hypr";
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/home/conf/hyprland/nox-nostra/hypr";
     force = true;
     recursive = true;
   };

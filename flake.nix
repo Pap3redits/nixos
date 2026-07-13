@@ -45,6 +45,16 @@
             stylix.nixosModules.stylix
 
             {
+              nixpkgs.overlays = [
+                (_: super: {
+                  python314Packages = super.python314Packages.overrideScope (_: pysuper: {
+                    patool = pysuper.patool.overridePythonAttrs (_: {
+                      doCheck = false;
+                    });
+                  });
+                })
+              ];
+
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
@@ -80,6 +90,15 @@
             stylix.nixosModules.stylix
             nvf.nixosModules.default
             {
+              nixpkgs.overlays = [
+                (_: super: {
+                  python314Packages = super.python314Packages.overrideScope (_: pysuper: {
+                    patool = pysuper.patool.overridePythonAttrs (_: {
+                      doCheck = false;
+                    });
+                  });
+                })
+              ];
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
@@ -115,6 +134,16 @@
             stylix.nixosModules.stylix
             nvf.nixosModules.default
             {
+              nixpkgs.overlays = [
+                (_: super: {
+                  python314Packages = super.python314Packages.overrideScope (_: pysuper: {
+                    patool = pysuper.patool.overridePythonAttrs (_: {
+                      doCheck = false;
+                    });
+                  });
+                })
+              ];
+
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
