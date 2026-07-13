@@ -99,7 +99,6 @@
     ./shared/terminal/ghostty.nix
     ./shared/terminal/zoxide.nix
     ./shared/terminal/yazi.nix
-    # ./shared/terminal/nvim.nix
     ./shared/terminal/btop.nix
     ./shared/terminal/fzf.nix
     ./shared/git.nix

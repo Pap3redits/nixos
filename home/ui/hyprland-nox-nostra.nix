@@ -1,4 +1,4 @@
-{ config, pkgs, lib, osConfig, ... }:
+{ config, lib, osConfig, ... }:
 lib.mkIf (osConfig.networking.hostName == "nox-nostra")
 {
 
