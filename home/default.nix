@@ -104,6 +104,7 @@
     ./shared/terminal/btop.nix
     ./shared/terminal/fzf.nix
     ./shared/git.nix
+    ./shared/emac.nix
     ./ui/hyprland-ira-domini.nix
     ./ui/hyprland-nox-nostra.nix
   ];
