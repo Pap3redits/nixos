@@ -105,7 +105,6 @@
     ./shared/emacs.nix
     ./ui/hyprland-ira-domini.nix
     ./ui/hyprland-nox-nostra.nix
-    ./shared/fsh.nix
   ];
 
   #enables bluetooth audio control
