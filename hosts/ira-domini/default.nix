@@ -12,6 +12,17 @@
     '';
   */
 
+  fileSystems."/mnt/second" = {
+    device = "/dev/disk/by-uuid/255febbc-548f-4161-b05b-946b5844de48";
+    fsType = "ext4";
+    options = [
+      
+      "users"
+      "nofail"
+      "x-gvfs-show"
+    ];
+  };
+
   networking.hostName = "ira-domini"; # Define your hostname.
 
   hardware.amdgpu.opencl.enable = true;
