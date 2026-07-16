@@ -17,6 +17,7 @@ hl.bind(mainMod .. " + ALT + F", hl.dsp.window.float({toggle}))
 hl.bind(mainMod .. " + P", hl.dsp.window.pin())
 hl.bind(mainMod .. " + A", hl.dsp.window.move({workspace = 8, follow = false}))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("emacs"))
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("env GDK_BACKEND=x11 gpu-screen-recorder-gtk"))
 
 --Special workspaces
 hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("music"))

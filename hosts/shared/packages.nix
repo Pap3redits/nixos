@@ -52,8 +52,8 @@
     nix-init
     gamescope
     lutris
-    gpu-screen-recorder-gtk
   ];
+
 
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;
