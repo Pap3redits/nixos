@@ -35,7 +35,10 @@
       xdg-desktop-portal-termfilechooser
       xdg-desktop-portal-hyprland
       xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
+
     ];
+
   };
 
   xdg.portal.config.common = {

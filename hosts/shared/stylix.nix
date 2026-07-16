@@ -10,5 +10,6 @@
     cursor.package = pkgs.rose-pine-cursor;
     cursor.size = 20;
     targets.kmscon.enable = false;
+    polarity = "dark";
   };
 }
