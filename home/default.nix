@@ -92,6 +92,7 @@
       bottles
       runelite
       emacs
+      deadlock-mod-manager
     ];
   };
   imports = [

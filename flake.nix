@@ -22,6 +22,8 @@
     };
 
     nvf.url = "github:notashelf/nvf";
+    
+    deadlock-api-ingest.url = "github:deadlock-api/deadlock-api-ingest";
   };
 
   outputs =
@@ -31,6 +33,7 @@
       home-manager,
       stylix,
       nvf,
+      deadlock-api-ingest,
       ...
     }:
     {
@@ -119,7 +122,6 @@
                 };
                 users.christian = ./home;
               };
-
             }
 
           ];
@@ -133,6 +135,7 @@
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
             nvf.nixosModules.default
+            deadlock-api-ingest.nixosModules.default
             {
               nixpkgs.overlays = [
                 (_: super: {
@@ -164,7 +167,12 @@
                 };
                 users.christian = ./home;
               };
-
+              services.deadlock-api-ingest = {
+                enable = true;
+                user = "christian";
+                group = "users";
+                package = deadlock-api-ingest.packages.x86_64-linux.default;
+              };
             }
 
           ];
