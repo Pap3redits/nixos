@@ -9,6 +9,7 @@ hl.monitor({
   mode = "preferred",
   position = "auto",
   scale = "1",
+  bitdepth = 8,
 })
 hl.monitor({
   output = "DP-10",
@@ -16,6 +17,7 @@ hl.monitor({
   position = "auto",
   scale = "auto",
   transform = 1,
+  bitdepth = 8,
 })
 
 -- Program variables

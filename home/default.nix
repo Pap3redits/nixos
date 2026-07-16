@@ -28,7 +28,7 @@
       kdePackages.filelight
       wgnord
       go
-      discord
+      discord-development
       wireguard-tools
       psmisc
       google-chrome
