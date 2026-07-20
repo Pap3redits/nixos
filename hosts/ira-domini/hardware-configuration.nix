@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
@@ -22,6 +22,17 @@
     { device = "/dev/disk/by-uuid/EE22-9D0B";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
+    };
+
+  fileSystems."/mnt/second" =
+    { device = "/dev/disk/by-uuid/255febbc-548f-4161-b05b-946b5844de48";
+      fsType = "ext4";
+    };
+
+  fileSystems."/mnt/papernas" =
+    { device = "192.168.1.14:/mnt/papernas/papershare";
+      fsType = "nfs4";
+      options = [ "x-systemd.automount" "noauto" ];
     };
 
   swapDevices =
