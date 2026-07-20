@@ -94,6 +94,7 @@
       runelite
       emacs
       deadlock-mod-manager
+      aseprite
     ];
   };
   imports = [
