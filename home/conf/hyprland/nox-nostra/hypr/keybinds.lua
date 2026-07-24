@@ -1,6 +1,6 @@
 local mainMod = "SUPER"
 local terminal = "ghostty" 
-local fileManager = "ghostty -e yazi"
+local fileManager = "ghostty -e superfile"
 local ipc = "qs -c noctalia-shell ipc call"
 local menu = "noctalia msg panel-toggle launcher"
 local browser = "flatpak run app.zen_browser.zen"
