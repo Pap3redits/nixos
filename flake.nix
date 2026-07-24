@@ -24,6 +24,9 @@
     nvf.url = "github:notashelf/nvf";
     
     deadlock-api-ingest.url = "github:deadlock-api/deadlock-api-ingest";
+
+    superfile.url = "github:yorukot/superfile";
+    superfile.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =

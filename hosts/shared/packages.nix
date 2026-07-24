@@ -1,6 +1,9 @@
-{ pkgs, ... }:
-
-{
+{ pkgs, inputs, ... }:
+let
+    superfile-patched = inputs.superfile.packages.${pkgs.system}.default.overrideAttrs (old: {
+      GOTOOLCHAIN = "local";
+    });
+in {
 
   nixpkgs.config.allowUnfree = true;
   programs = {
@@ -52,6 +55,7 @@
     nix-init
     gamescope
     lutris
+    superfile-patched
   ];
 
 
