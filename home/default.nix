@@ -113,5 +113,15 @@
   #enables bluetooth audio control
   services.mpris-proxy.enable = true;
 
+#auto mounts usb drives
+  services.udiskie = {
+    enable = true;
+    settings = {
+      program_options = {
+            file_manager = "${pkgs.ghostty}/bin/ghostty -e ${pkgs.superfile}/bin/superfile";
+      };
+    };
+  };
+
   home.stateVersion = "25.05";
 }
