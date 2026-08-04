@@ -95,6 +95,7 @@
       emacs
       deadlock-mod-manager
       aseprite
+      pangolin-cli
     ];
   };
   imports = [
