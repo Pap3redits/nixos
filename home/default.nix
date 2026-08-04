@@ -97,6 +97,8 @@
       aseprite
       lufus
       pangolin-cli
+      file
+      jq
     ];
   };
   imports = [

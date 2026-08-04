@@ -26,8 +26,8 @@ hl.bind(mainMod .. " + O", hl.dsp.workspace.toggle_special("obsidian"))
 hl.bind(mainMod .. " + N", hl.dsp.workspace.toggle_special("note"))
 
 --Screenshots
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m active"))
-hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"))
+hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m active ~/bin/zipline.sh"))
+--hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"))
 
 --Window resizing
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
