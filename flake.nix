@@ -43,12 +43,14 @@
 
       nixosConfigurations = {
         itani-lo-sahn = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
           modules = [
             ./hosts/itani-lo-sahn
             ./hosts/itani-lo-sahn/noctalia.nix
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
+            nvf.nixosModules.default
 
             {
               nixpkgs.overlays = [

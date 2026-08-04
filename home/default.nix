@@ -95,6 +95,7 @@
       emacs
       deadlock-mod-manager
       aseprite
+      lufus
     ];
   };
   imports = [
@@ -108,6 +109,7 @@
     ./shared/emacs.nix
     ./ui/hyprland-ira-domini.nix
     ./ui/hyprland-nox-nostra.nix
+    ./ui/hyprland-itani-lo-sahn.nix
   ];
 
   #enables bluetooth audio control
