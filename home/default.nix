@@ -96,6 +96,7 @@
       deadlock-mod-manager
       aseprite
       lufus
+      pangolin-cli
     ];
   };
   imports = [
