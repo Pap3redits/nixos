@@ -1,11 +1,14 @@
 { config, pkgs, ... }:
 {
+networking = {
 
-  networking.firewall.enable = false;
-  networking.firewall.checkReversePath = false;
+  firewall.enable = false;
+  firewall.checkReversePath = false;
 
-  networking.networkmanager.enable = true;
-  networking.networkmanager.dns = "systemd-resolved";
+  networkmanager.enable = true;
+  networkmanager.dns = "systemd-resolved";
+};
   services.resolved.enable = true;
+
 
 }
