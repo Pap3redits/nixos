@@ -71,7 +71,6 @@
       gnome-keyring
       rose-pine-cursor
       betterdiscordctl
-      rose-pine-gtk-theme
       rose-pine-icon-theme
       hyprtoolkit
       base16-schemes
