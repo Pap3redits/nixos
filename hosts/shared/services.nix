@@ -1,15 +1,10 @@
-{pkgs, ...}:
+{inputs, ...}:
 {
+  imports = [inputs.noctalia-greeter.nixosModules.default];
+  programs.noctalia-greeter.enable = true;
   services = {
 
     elephant.enable = true;
-
-    displayManager.sddm = {
-      enable = true;
-      wayland.enable = true;
-      extraPackages = [pkgs.sddm-astronaut];
-      theme = "sddm-astronaut-theme";
-    };
 
     # Configure keymap in X11
     xserver.xkb = {
