@@ -55,7 +55,7 @@
       nvtopPackages.full
       onlyoffice-desktopeditors
       vlc
-      wf-recorder
+      #TODO wf-recorder test install at a later date
       yazi
       cpx
       vscodium
@@ -93,7 +93,6 @@
       runelite
       emacs
       deadlock-mod-manager
-      aseprite
       lufus
       pangolin-cli
       file
