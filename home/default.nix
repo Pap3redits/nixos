@@ -97,6 +97,7 @@
       pangolin-cli
       file
       jq
+      tldr
     ];
   };
   imports = [
