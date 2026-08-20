@@ -31,6 +31,9 @@
 
     superfile.url = "github:yorukot/superfile";
     superfile.inputs.nixpkgs.follows = "nixpkgs";
+
+    psysonic.url = "github:Psychotoxical/psysonic";
+
   };
 
   outputs =
@@ -87,6 +90,9 @@
                 };
                 users.christian = import ./home;
               };
+              environment.systemPackages = [
+                inputs.psysonic.packages.x86_64-linux.psysonic
+              ];
 
             }
 
@@ -138,6 +144,9 @@
                 group = "users";
                 package = deadlock-api-ingest.packages.x86_64-linux.default;
               };
+              environment.systemPackages = [
+                inputs.psysonic.packages.x86_64-linux.psysonic
+              ];
 
             }
 
@@ -190,6 +199,11 @@
                 group = "users";
                 package = deadlock-api-ingest.packages.x86_64-linux.default;
               };
+
+              environment.systemPackages = [
+                inputs.psysonic.packages.x86_64-linux.psysonic
+              ];
+
             }
 
           ];

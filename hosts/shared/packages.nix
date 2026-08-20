@@ -56,6 +56,8 @@ in {
     gamescope
     lutris
     superfile-patched
+    keepassxc
+    inputs.psysonic.packages.${pkgs.stdenv.hostPlatform.system}.psysonic
   ];
 
 
