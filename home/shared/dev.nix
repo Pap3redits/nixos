@@ -10,5 +10,6 @@
     gore
     shellcheck
     discount
+    ispell
   ];
 }
