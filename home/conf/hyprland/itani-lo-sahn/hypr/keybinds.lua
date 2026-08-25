@@ -41,7 +41,7 @@ for i = 1, 10 do
 end
 
 
-hl.workspace_rule({ workspace = "special:music", on_created_empty = "psysonic" })
+hl.workspace_rule({ workspace = "special:music", on_created_empty = "XDG_CURRENT_DESKTOP=GNOME feishin" }) -- so dumb that I need to set this variable for the secrets to work
 hl.workspace_rule({ workspace = "special:sysmonitor", on_created_empty = "ghostty -e btop" })--todo update later
 hl.workspace_rule({ workspace = "special:obsidian", on_created_empty = "obsidian" })
 hl.workspace_rule({ workspace = "special:note", on_created_empty = "flatpak run io.github.nokse22.minitext" })

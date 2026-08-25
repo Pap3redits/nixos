@@ -10,6 +10,7 @@ in {
     hyprland.enable = true;
     hyprland.withUWSM = true;
 
+
     neovim = {
       enable = true;
       defaultEditor = true;
@@ -57,7 +58,7 @@ in {
     lutris
     superfile-patched
     keepassxc
-    inputs.psysonic.packages.${pkgs.stdenv.hostPlatform.system}.psysonic
+    gnome-keyring
   ];
 
 

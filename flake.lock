@@ -407,22 +407,6 @@
         "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz"
       }
     },
-    "nixpkgs_5": {
-      "locked": {
-        "lastModified": 1783776592,
-        "narHash": "sha256-UgCQzxeWI75XM8G+hPrPh+MKzEPjG3SpAj7dtqSbksA=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "e7a3ca8092b61ff85b6a45bf863ea2b2d6a661b3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "noctalia": {
       "inputs": {
         "nixpkgs": "nixpkgs_3"
@@ -507,24 +491,6 @@
         "type": "github"
       }
     },
-    "psysonic": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_5"
-      },
-      "locked": {
-        "lastModified": 1787170650,
-        "narHash": "sha256-U9pag8hw+0XBT64bxksM3N1N1PVx7HsRB8Y3qsiezzM=",
-        "owner": "Psychotoxical",
-        "repo": "psysonic",
-        "rev": "be8dbdf86f87478830d3db5ceadc7113249226c5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Psychotoxical",
-        "repo": "psysonic",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "deadlock-api-ingest": "deadlock-api-ingest",
@@ -534,7 +500,6 @@
         "noctalia": "noctalia",
         "noctalia-greeter": "noctalia-greeter",
         "nvf": "nvf",
-        "psysonic": "psysonic",
         "stylix": "stylix",
         "superfile": "superfile"
       }

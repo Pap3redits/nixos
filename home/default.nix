@@ -68,7 +68,6 @@
       util-linux
       qt6Packages.qt6ct
       obs-studio
-      gnome-keyring
       rose-pine-cursor
       betterdiscordctl
       rose-pine-icon-theme
@@ -98,6 +97,7 @@
       file
       jq
       tldr
+      feishin
     ];
   };
   imports = [
