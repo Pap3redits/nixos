@@ -98,6 +98,7 @@
       jq
       tldr
       feishin
+      cmake
     ];
   };
   imports = [
@@ -109,6 +110,7 @@
     ./shared/terminal/fzf.nix
     ./shared/git.nix
     ./shared/emacs.nix
+    ./shared/dev.nix
     ./ui/hyprland-ira-domini.nix
     ./ui/hyprland-nox-nostra.nix
     ./ui/hyprland-itani-lo-sahn.nix
