@@ -98,7 +98,7 @@
       jq
       tldr
       feishin
-      cmake
+      kdePackages.partitionmanager
     ];
   };
   imports = [
