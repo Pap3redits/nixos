@@ -8,6 +8,7 @@ networking = {
   networkmanager.enable = true;
   networkmanager.dns = "systemd-resolved";
 };
+
   services.resolved.enable = true;
 
   nix.settings.substituters = [
