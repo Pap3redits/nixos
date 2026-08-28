@@ -1,6 +1,6 @@
 local mainMod = "SUPER"
 local terminal = "ghostty" 
-local fileManager = "ghostty -e yazi"
+local fileManager = "ghostty -e superfile"
 local ipc = "qs -c noctalia-shell ipc call"
 local menu = "noctalia msg panel-toggle launcher"
 local browser = "flatpak run app.zen_browser.zen"
@@ -16,6 +16,7 @@ hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ fullscreen, toggle
 hl.bind(mainMod .. " + ALT + F", hl.dsp.window.float({toggle}))
 hl.bind(mainMod .. " + P", hl.dsp.window.pin())
 hl.bind(mainMod .. " + A", hl.dsp.window.move({workspace = 8, follow = false}))
+hl.bind(mainMod .. " + l", hl.dsp.window.cycle_next({ "direction" }))
 
 --Special workspaces
 hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("music"))

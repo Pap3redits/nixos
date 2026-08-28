@@ -5,11 +5,14 @@ lib.mkIf (osConfig.networking.hostName == "ira-domini")
 
   #gtk.gtk4.theme = null;
 
-  #wayland.windowManager.hyprland = {
-  #  enable = true;
-  #  package = null;
-  #  portalPackage = null;
-  #};
+  wayland.windowManager.hyprland = {
+    enable = true;
+    package = null;
+    #portalPackage = null;
+    plugins = [ pkgs.hyprlandPlugins.hypr-dynamic-cursors ];
+    configType = "lua";
+  };
+  xdg.configFile."hypr/hyprland.lua".enable = false;
 
   xdg.configFile."hypr" = {
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/home/conf/hyprland/ira-domini/hypr";

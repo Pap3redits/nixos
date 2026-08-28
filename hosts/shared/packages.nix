@@ -56,6 +56,7 @@ in {
     gamescope
     lutris
     superfile-patched
+    hyprlandPlugins.hypr-dynamic-cursors
   ];
 
 
