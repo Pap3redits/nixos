@@ -11,11 +11,13 @@ hl.bind(mainMod .. " + return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. "+ SHIFT + RETURN", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("noctalia msg panel-toggle yuuto/calculator:panel"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = toggle}))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ fullscreen, toggle}))
 hl.bind(mainMod .. " + ALT + F", hl.dsp.window.float({toggle}))
 hl.bind(mainMod .. " + P", hl.dsp.window.pin())
 hl.bind(mainMod .. " + A", hl.dsp.window.move({workspace = 8, follow = false}))
+hl.bind(mainMod .. " + L", hl.dsp.window.cycle_next())
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("emacs"))
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("env GDK_BACKEND=x11 gpu-screen-recorder-gtk"))
 
@@ -26,7 +28,7 @@ hl.bind(mainMod .. " + O", hl.dsp.workspace.toggle_special("obsidian"))
 hl.bind(mainMod .. " + N", hl.dsp.workspace.toggle_special("note"))
 
 --Screenshots
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m active"))
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -o ~/Pictures -m active -m output -- ~/bin/zipline.sh"))
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"))
 
 --Window resizing
@@ -41,7 +43,7 @@ for i = 1, 10 do
 end
 
 
-hl.workspace_rule({ workspace = "special:music", on_created_empty = "flatpak run org.jeffvli.feishin" })
+hl.workspace_rule({ workspace = "special:music", on_created_empty = "XDG_CURRENT_DESKTOP=GNOME feishin" }) -- so dumb that I need to set this variable for the secrets to work
 hl.workspace_rule({ workspace = "special:sysmonitor", on_created_empty = "ghostty -e btop" })--todo update later
 hl.workspace_rule({ workspace = "special:obsidian", on_created_empty = "obsidian" })
 hl.workspace_rule({ workspace = "special:note", on_created_empty = "flatpak run io.github.nokse22.minitext" })
@@ -74,7 +76,7 @@ hl.window_rule({
   match = {
     class = "discord"
   },
-  workspace = "2"
+  workspace = "6"
 })
 local suppressMaximizeRule = hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.

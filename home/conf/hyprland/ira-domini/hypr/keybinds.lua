@@ -16,7 +16,11 @@ hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ fullscreen, toggle
 hl.bind(mainMod .. " + ALT + F", hl.dsp.window.float({toggle}))
 hl.bind(mainMod .. " + P", hl.dsp.window.pin())
 hl.bind(mainMod .. " + A", hl.dsp.window.move({workspace = 8, follow = false}))
+<<<<<<< HEAD
 hl.bind(mainMod .. " + l", hl.dsp.window.cycle_next({ "direction" }))
+=======
+hl.bind(mainMod .. " + L", hl.dsp.window.cycle_next())
+>>>>>>> origin/nvf
 
 --Special workspaces
 hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("music"))
@@ -40,7 +44,7 @@ for i = 1, 10 do
 end
 
 
-hl.workspace_rule({ workspace = "special:music", on_created_empty = "flatpak run org.jeffvli.feishin" })
+hl.workspace_rule({ workspace = "special:music", on_created_empty = "XDG_CURRENT_DESKTOP=GNOME feishin" }) -- so dumb that I need to set this variable for the secrets to work
 hl.workspace_rule({ workspace = "special:sysmonitor", on_created_empty = "ghostty -e btop" })--todo update later
 hl.workspace_rule({ workspace = "special:obsidian", on_created_empty = "obsidian" })
 hl.workspace_rule({ workspace = "special:note", on_created_empty = "flatpak run io.github.nokse22.minitext" })

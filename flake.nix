@@ -20,6 +20,10 @@
       url = "github:noctalia-dev/noctalia/cachix";
       #inputs.nixpkgs.follows = "nixpkgs";
     };
+    noctalia-greeter = {
+      url = "github:noctalia-dev/noctalia-greeter";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nvf.url = "github:notashelf/nvf";
     
@@ -27,6 +31,8 @@
 
     superfile.url = "github:yorukot/superfile";
     superfile.inputs.nixpkgs.follows = "nixpkgs";
+
+
   };
 
   outputs =
@@ -43,12 +49,14 @@
 
       nixosConfigurations = {
         itani-lo-sahn = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
           modules = [
             ./hosts/itani-lo-sahn
             ./hosts/itani-lo-sahn/noctalia.nix
             home-manager.nixosModules.home-manager
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
+            nvf.nixosModules.default
 
             {
               nixpkgs.overlays = [
@@ -95,6 +103,7 @@
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
             nvf.nixosModules.default
+            deadlock-api-ingest.nixosModules.default
             {
               nixpkgs.overlays = [
                 (_: super: {
@@ -125,6 +134,13 @@
                 };
                 users.christian = ./home;
               };
+              services.deadlock-api-ingest = {
+                enable = true;
+                user = "christian";
+                group = "users";
+                package = deadlock-api-ingest.packages.x86_64-linux.default;
+              };
+
             }
 
           ];
@@ -176,6 +192,8 @@
                 group = "users";
                 package = deadlock-api-ingest.packages.x86_64-linux.default;
               };
+
+
             }
 
           ];

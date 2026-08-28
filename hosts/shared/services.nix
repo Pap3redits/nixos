@@ -1,15 +1,11 @@
-{pkgs, ...}:
+{inputs, ...}:
 {
+  imports = [inputs.noctalia-greeter.nixosModules.default];
+  programs.noctalia-greeter.enable = true;
   services = {
 
+    gnome.gnome-keyring.enable = true;
     elephant.enable = true;
-
-    displayManager.sddm = {
-      enable = true;
-      wayland.enable = true;
-      extraPackages = [pkgs.sddm-astronaut];
-      theme = "sddm-astronaut-theme";
-    };
 
     # Configure keymap in X11
     xserver.xkb = {
@@ -30,6 +26,7 @@
     };
 
     udisks2.enable = true;
+
 
     udev.extraRules = ''
       KERNEL=="uinput", MODE="777", GROUP="input", OPTIONS+="static_node=uinput"
@@ -57,5 +54,8 @@
 
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "christian" ];
+
+  virtualisation.docker.enable = true;
+
 
 }

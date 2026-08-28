@@ -50,6 +50,7 @@
       cd = "z";
       cp = "cpx";
       ztest = "echo itworks";
+      feishin = "XDG_CURRENT_DESKTOP=GNOME feishin";
     };
 
   };

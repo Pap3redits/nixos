@@ -55,7 +55,7 @@
       nvtopPackages.full
       onlyoffice-desktopeditors
       vlc
-      wf-recorder
+      #TODO wf-recorder test install at a later date
       yazi
       cpx
       vscodium
@@ -68,10 +68,8 @@
       util-linux
       qt6Packages.qt6ct
       obs-studio
-      gnome-keyring
       rose-pine-cursor
       betterdiscordctl
-      rose-pine-gtk-theme
       rose-pine-icon-theme
       hyprtoolkit
       base16-schemes
@@ -94,8 +92,19 @@
       runelite
       emacs
       deadlock-mod-manager
+<<<<<<< HEAD
       aseprite
       gnumake
+=======
+      lufus
+      pangolin-cli
+      file
+      jq
+      tldr
+      feishin
+      kdePackages.partitionmanager
+      harper
+>>>>>>> origin/nvf
     ];
   };
   imports = [
@@ -107,19 +116,21 @@
     ./shared/terminal/fzf.nix
     ./shared/git.nix
     ./shared/emacs.nix
+    ./shared/dev.nix
     ./ui/hyprland-ira-domini.nix
     ./ui/hyprland-nox-nostra.nix
+    ./ui/hyprland-itani-lo-sahn.nix
   ];
 
   #enables bluetooth audio control
   services.mpris-proxy.enable = true;
 
-#auto mounts usb drives
+  #auto mounts usb drives
   services.udiskie = {
     enable = true;
     settings = {
       program_options = {
-            file_manager = "${pkgs.ghostty}/bin/ghostty -e ${pkgs.superfile}/bin/superfile";
+        file_manager = "${pkgs.ghostty}/bin/ghostty -e ${pkgs.superfile}/bin/superfile";
       };
     };
   };
