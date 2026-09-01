@@ -57,12 +57,9 @@ in {
     gamescope
     lutris
     superfile-patched
-<<<<<<< HEAD
     hyprlandPlugins.hypr-dynamic-cursors
-=======
     keepassxc
     gnome-keyring
->>>>>>> origin/nvf
   ];
 
 

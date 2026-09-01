@@ -92,10 +92,7 @@
       runelite
       emacs
       deadlock-mod-manager
-<<<<<<< HEAD
-      aseprite
       gnumake
-=======
       lufus
       pangolin-cli
       file
@@ -104,7 +101,6 @@
       feishin
       kdePackages.partitionmanager
       harper
->>>>>>> origin/nvf
     ];
   };
   imports = [
