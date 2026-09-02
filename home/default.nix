@@ -101,6 +101,7 @@
       feishin
       kdePackages.partitionmanager
       harper
+      gh
     ];
   };
   imports = [
