@@ -34,7 +34,6 @@
 
   time.timeZone = "America/New_York";
 
-
   fonts.packages = with pkgs; [
     nerd-fonts._0xproto
     cantarell-fonts
@@ -51,7 +50,5 @@
       "tailscale"
     ];
   };
-
-
 
 }

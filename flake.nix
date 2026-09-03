@@ -26,12 +26,11 @@
     };
 
     nvf.url = "github:notashelf/nvf";
-    
+
     deadlock-api-ingest.url = "github:deadlock-api/deadlock-api-ingest";
 
     superfile.url = "github:yorukot/superfile";
     superfile.inputs.nixpkgs.follows = "nixpkgs";
-
 
   };
 
@@ -61,11 +60,13 @@
             {
               nixpkgs.overlays = [
                 (_: super: {
-                  python314Packages = super.python314Packages.overrideScope (_: pysuper: {
-                    patool = pysuper.patool.overridePythonAttrs (_: {
-                      doCheck = false;
-                    });
-                  });
+                  python314Packages = super.python314Packages.overrideScope (
+                    _: pysuper: {
+                      patool = pysuper.patool.overridePythonAttrs (_: {
+                        doCheck = false;
+                      });
+                    }
+                  );
                 })
               ];
 
@@ -107,11 +108,13 @@
             {
               nixpkgs.overlays = [
                 (_: super: {
-                  python314Packages = super.python314Packages.overrideScope (_: pysuper: {
-                    patool = pysuper.patool.overridePythonAttrs (_: {
-                      doCheck = false;
-                    });
-                  });
+                  python314Packages = super.python314Packages.overrideScope (
+                    _: pysuper: {
+                      patool = pysuper.patool.overridePythonAttrs (_: {
+                        doCheck = false;
+                      });
+                    }
+                  );
                 })
               ];
               home-manager = {
@@ -158,11 +161,13 @@
             {
               nixpkgs.overlays = [
                 (_: super: {
-                  python314Packages = super.python314Packages.overrideScope (_: pysuper: {
-                    patool = pysuper.patool.overridePythonAttrs (_: {
-                      doCheck = false;
-                    });
-                  });
+                  python314Packages = super.python314Packages.overrideScope (
+                    _: pysuper: {
+                      patool = pysuper.patool.overridePythonAttrs (_: {
+                        doCheck = false;
+                      });
+                    }
+                  );
                 })
               ];
 
@@ -192,7 +197,6 @@
                 group = "users";
                 package = deadlock-api-ingest.packages.x86_64-linux.default;
               };
-
 
             }
 

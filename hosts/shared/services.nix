@@ -1,6 +1,6 @@
-{inputs, ...}:
+{ inputs, ... }:
 {
-  imports = [inputs.noctalia-greeter.nixosModules.default];
+  imports = [ inputs.noctalia-greeter.nixosModules.default ];
   programs.noctalia-greeter.enable = true;
   services = {
 
@@ -26,7 +26,6 @@
     };
 
     udisks2.enable = true;
-
 
     udev.extraRules = ''
       KERNEL=="uinput", MODE="777", GROUP="input", OPTIONS+="static_node=uinput"
@@ -56,6 +55,5 @@
   users.extraGroups.vboxusers.members = [ "christian" ];
 
   virtualisation.docker.enable = true;
-
 
 }
