@@ -687,8 +687,6 @@
         "repo": "base16-zed",
         "type": "github"
       }
-<<<<<<< HEAD
-=======
     },
     "zen-browser": {
       "inputs": {
@@ -712,7 +710,6 @@
         "repo": "zen-browser-flake",
         "type": "github"
       }
->>>>>>> 82caba1 (testing)
     }
   },
   "root": "root",
