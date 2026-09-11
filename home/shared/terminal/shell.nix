@@ -1,7 +1,10 @@
-{ config, pkgs, ... }:
 {
-
-  
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
+{
 
   programs.bash = {
 

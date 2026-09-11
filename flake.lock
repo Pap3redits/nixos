@@ -501,7 +501,8 @@
         "noctalia-greeter": "noctalia-greeter",
         "nvf": "nvf",
         "stylix": "stylix",
-        "superfile": "superfile"
+        "superfile": "superfile",
+        "zen-browser": "zen-browser"
       }
     },
     "rust-analyzer-src": {
@@ -686,6 +687,32 @@
         "repo": "base16-zed",
         "type": "github"
       }
+<<<<<<< HEAD
+=======
+    },
+    "zen-browser": {
+      "inputs": {
+        "home-manager": [
+          "home-manager"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788864239,
+        "narHash": "sha256-a2BIiekLSIgruRro3fXQgohmw3xlCFJBGW/TKK4x+E8=",
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "rev": "018726119b87c9fb906857af802d3cbfbc10a46d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "type": "github"
+      }
+>>>>>>> 82caba1 (testing)
     }
   },
   "root": "root",

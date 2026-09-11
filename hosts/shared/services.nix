@@ -44,6 +44,8 @@
     avahi.enable = true;
 
     blueman.enable = true;
+
+    timesyncd.enable = true;
   };
   hardware.bluetooth.enable = true;
   hardware.graphics = {

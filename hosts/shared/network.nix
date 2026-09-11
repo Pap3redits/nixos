@@ -1,13 +1,18 @@
-{ config, pkgs, ... }:
 {
-networking = {
+  config,
+  pkgs,
+  ...
+}:
+{
+  networking = {
 
-  firewall.enable = false;
-  firewall.checkReversePath = false;
+    firewall.enable = false;
+    firewall.checkReversePath = false;
 
-  networkmanager.enable = true;
-  networkmanager.dns = "systemd-resolved";
-};
+    networkmanager.enable = true;
+    networkmanager.dns = "systemd-resolved";
+
+  };
 
   services.resolved.enable = true;
 
@@ -20,6 +25,5 @@ networking = {
     "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
   ];
-
 
 }

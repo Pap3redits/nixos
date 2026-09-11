@@ -1,15 +1,15 @@
 { pkgs, inputs, ... }:
 let
-    superfile-patched = inputs.superfile.packages.${pkgs.system}.default.overrideAttrs (old: {
-      GOTOOLCHAIN = "local";
-    });
-in {
+  superfile-patched = inputs.superfile.packages.${pkgs.system}.default.overrideAttrs (old: {
+    GOTOOLCHAIN = "local";
+  });
+in
+{
 
   nixpkgs.config.allowUnfree = true;
   programs = {
     hyprland.enable = true;
     hyprland.withUWSM = true;
-
 
     neovim = {
       enable = true;
@@ -33,7 +33,6 @@ in {
     appimage.binfmt = true;
   };
   users.defaultUserShell = pkgs.zsh;
-
 
   nix.settings.experimental-features = [
     "nix-command"
@@ -60,8 +59,8 @@ in {
     hyprlandPlugins.hypr-dynamic-cursors
     keepassxc
     gnome-keyring
+    inputs.zen-browser.packages."${pkgs.system}".default
   ];
-
 
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;

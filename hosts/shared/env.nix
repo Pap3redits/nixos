@@ -5,6 +5,8 @@
     EDITOR = "nvim";
     NH_FLAKE = "/home/christian/nixos";
     XDG_CONFIG_HOME = "$HOME/.config";
+    TZ = ":/etc/localtime";
+
   };
 
   xdg.mime = {
