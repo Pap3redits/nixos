@@ -16,4 +16,9 @@
     discount
     ispell
   ];
+
+  programs.zed-editor = {
+    enable = true;
+    extraPackages = [ pkgs.nixd pkgs.nix-ld];
+  };
 }

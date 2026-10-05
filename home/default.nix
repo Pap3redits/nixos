@@ -103,6 +103,8 @@
       kdePackages.partitionmanager
       harper
       gh
+      mullvad-vpn
+      wowup-cf
     ];
   };
   imports = [
