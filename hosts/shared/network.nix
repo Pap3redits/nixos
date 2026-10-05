@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   ...
 }:
 {
@@ -26,4 +24,8 @@
     "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
   ];
 
+  programs.localsend = {
+      enable = true;
+      openFirewall = true;
+    };
 }
