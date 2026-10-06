@@ -53,7 +53,6 @@
       hyprpaper
       nh
       nvtopPackages.full
-      onlyoffice-desktopeditors
       vlc
       #TODO wf-recorder test install at a later date
       yazi
