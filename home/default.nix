@@ -85,7 +85,6 @@
       tsx # nvim
       nixfmt # nvim
       emacs
-      streamlink-twitch-gui-bin
       easyeffects
       lsfg-vk-ui
       bottles

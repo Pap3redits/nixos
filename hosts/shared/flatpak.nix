@@ -9,6 +9,7 @@
       "io.github.nokse22.minitext"
       "com.adamcake.Bolt"
       "com.dec05eba.gpu_screen_recorder"
+      "com.collaboraoffice.Office"
     ];
     update.auto = {
       enable = true;
