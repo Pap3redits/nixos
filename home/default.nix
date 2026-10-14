@@ -102,6 +102,7 @@
       gh
       mullvad-vpn
       wowup-cf
+      (callPackage ./shared/statlocker-companion.nix { })
     ];
   };
   imports = [
@@ -117,6 +118,7 @@
     ./ui/hyprland-ira-domini.nix
     ./ui/hyprland-nox-nostra.nix
     ./ui/hyprland-itani-lo-sahn.nix
+    ./shared/desktop.nix
   ];
 
   #enables bluetooth audio control
