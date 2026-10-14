@@ -60,6 +60,7 @@ in
     keepassxc
     gnome-keyring
     inputs.zen-browser.packages."${pkgs.system}".default
+    (callPackage ./statlocker-companion.nix { })
   ];
 
   security.polkit.enable = true;
