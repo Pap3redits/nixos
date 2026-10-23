@@ -1,5 +1,5 @@
 {lib, ...}:
-{  
+{
   imports = [./keymaps.nix];
 
   programs.nvf = {
@@ -40,9 +40,9 @@
           nix.enable = true;
           nix.lsp.enable = true;
           nix.format.enable = true;
-          lua.lsp.lazydev.enable = true;
+          lua.extensions.lazydev.enable = true;
         };
-        
+
         mini.ai.enable = true;
         mini.pairs.enable = true;
         mini.icons.enable = true;
@@ -54,7 +54,7 @@
         };
         session.nvim-session-manager.enable = true;
         session.nvim-session-manager.setupOpts.autoload_mode = "Disabled";
-        
+
 
         terminal.toggleterm.enable = true;
         terminal.toggleterm.lazygit.enable = true;
@@ -111,7 +111,7 @@
           toggle = {};
           lazygit = {};
         };
-        
+
         git.gitsigns.enable = true;
 
         formatter.conform-nvim.enable = true;
