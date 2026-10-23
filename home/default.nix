@@ -28,7 +28,6 @@
       kdePackages.filelight
       wgnord
       go
-      discord-development
       discord
       wireguard-tools
       psmisc
