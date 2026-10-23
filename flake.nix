@@ -24,9 +24,6 @@
     nvf.url = "github:notashelf/nvf";
 
 
-    superfile.url = "github:yorukot/superfile";
-    superfile.inputs.nixpkgs.follows = "nixpkgs";
-
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs = {

@@ -1,9 +1,11 @@
 { pkgs, inputs, ... }:
+/*
 let
   superfile-patched = inputs.superfile.packages.${pkgs.system}.default.overrideAttrs (old: {
     GOTOOLCHAIN = "local";
   });
 in
+*/
 {
 
   nixpkgs.config.allowUnfree = true;
@@ -55,7 +57,8 @@ in
     nix-init
     gamescope
     lutris
-    superfile-patched
+    # superfile-patched
+    superfile
     hyprlandPlugins.hypr-dynamic-cursors
     keepassxc
     gnome-keyring
