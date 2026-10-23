@@ -102,7 +102,7 @@
       gh
       mullvad-vpn
       wowup-cf
-      (callPackage ./shared/statlocker-companion.nix { })
+      # (callPackage ./shared/statlocker-companion.nix { })
     ];
   };
   imports = [

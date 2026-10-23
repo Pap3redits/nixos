@@ -1,7 +1,7 @@
 {pkgs, ...}:
 {
 
-
+/*
 xdg.desktopEntries.statlocker-companion = {
     name = "Statlocker Companion";
     exec = "${(pkgs.callPackage ./statlocker-companion.nix { })}/bin/statlocker-companion";
@@ -9,7 +9,7 @@ xdg.desktopEntries.statlocker-companion = {
     categories = [ "Game" "Utility" ];
     terminal = false;
   };
-
+*/
 
 xdg.desktopEntries.en-croissant = {
     name = "En-Croissant";

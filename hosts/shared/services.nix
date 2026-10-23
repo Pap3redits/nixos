@@ -1,8 +1,8 @@
 { inputs, ... }:
 {
-  imports = [ inputs.noctalia-greeter.nixosModules.default ];
-  programs.noctalia-greeter.enable = true;
   services = {
+
+    displayManager.noctalia-greeter.enable = true;
 
     gnome.gnome-keyring.enable = true;
     elephant.enable = true;
