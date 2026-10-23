@@ -45,7 +45,6 @@ in
 
   environment.systemPackages = with pkgs; [
     git
-    kitty
     kdePackages.qtmultimedia # needed for the sddm theme
     nfs-utils
     clipse
