@@ -53,8 +53,8 @@
     enable32Bit = true;
   };
 
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "christian" ];
+  # virtualisation.virtualbox.host.enable = true;
+  # users.extraGroups.vboxusers.members = [ "christian" ];
 
   virtualisation.docker.enable = true;
 
