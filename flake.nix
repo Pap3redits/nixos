@@ -27,7 +27,6 @@
 
     nvf.url = "github:notashelf/nvf";
 
-    deadlock-api-ingest.url = "github:deadlock-api/deadlock-api-ingest";
 
     superfile.url = "github:yorukot/superfile";
     superfile.inputs.nixpkgs.follows = "nixpkgs";
@@ -49,7 +48,6 @@
       home-manager,
       stylix,
       nvf,
-      deadlock-api-ingest,
       ...
     }:
     {
@@ -98,7 +96,6 @@
                 };
                 users.christian = import ./home;
               };
-
             }
 
           ];
@@ -112,7 +109,6 @@
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
             nvf.nixosModules.default
-            deadlock-api-ingest.nixosModules.default
             {
               nixpkgs.overlays = [
                 (_: super: {
@@ -145,15 +141,7 @@
                 };
                 users.christian = ./home;
               };
-              services.deadlock-api-ingest = {
-                enable = true;
-                user = "christian";
-                group = "users";
-                package = deadlock-api-ingest.packages.x86_64-linux.default;
-              };
-
             }
-
           ];
         };
         ira-domini = nixpkgs.lib.nixosSystem {
@@ -165,7 +153,6 @@
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
             nvf.nixosModules.default
-            deadlock-api-ingest.nixosModules.default
             {
               nixpkgs.overlays = [
                 (_: super: {
@@ -178,7 +165,6 @@
                   );
                 })
               ];
-
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
@@ -199,15 +185,7 @@
                 };
                 users.christian = ./home;
               };
-              services.deadlock-api-ingest = {
-                enable = true;
-                user = "christian";
-                group = "users";
-                package = deadlock-api-ingest.packages.x86_64-linux.default;
-              };
-
             }
-
           ];
         };
       };
