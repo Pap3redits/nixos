@@ -22,7 +22,17 @@
     extraPackages = [ pkgs.nixd pkgs.nix-ld];
     userSettings = {
      theme = lib.mkForce "Rosé Pine";
+     vim_mode = true;
+     colorize_brackets = true;
+     disable_ai = true;
 
     };
+    extensions = [
+      "nix"
+      "Rosé Pine"
+      "HTML"
+      "TOML"
+      "Lua"
+    ];
   };
 }
