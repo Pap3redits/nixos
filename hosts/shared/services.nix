@@ -29,6 +29,7 @@
 
     udev.extraRules = ''
       KERNEL=="uinput", MODE="777", GROUP="input", OPTIONS+="static_node=uinput"
+      KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="d028", MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"
     '';
 
     upower.enable = true;
