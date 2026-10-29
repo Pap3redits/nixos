@@ -13,6 +13,8 @@ in
     hyprland.enable = true;
     hyprland.withUWSM = true;
 
+    hyperline.enable = true;
+
     neovim = {
       enable = true;
       defaultEditor = true;
@@ -62,6 +64,7 @@ in
     keepassxc
     gnome-keyring
     inputs.zen-browser.packages."${pkgs.system}".default
+    nurl
   ];
 
   security.polkit.enable = true;

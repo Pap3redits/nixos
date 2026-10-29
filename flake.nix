@@ -32,6 +32,9 @@
       };
     };
 
+    hyperline.url = "github:paralin/hyperline-nix";
+    hyperline.inputs.nixpkgs.follows = "nixpkgs";
+
   };
 
   outputs =
@@ -41,6 +44,7 @@
       home-manager,
       stylix,
       nvf,
+      hyperline,
       ...
     }:
     {
@@ -102,6 +106,7 @@
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
             nvf.nixosModules.default
+            hyperline.nixosModules.default
             {
               nixpkgs.overlays = [
                 (_: super: {
@@ -146,6 +151,7 @@
             nix-flatpak.nixosModules.nix-flatpak
             stylix.nixosModules.stylix
             nvf.nixosModules.default
+            hyperline.nixosModules.default
             {
               nixpkgs.overlays = [
                 (_: super: {

@@ -176,6 +176,26 @@
         "type": "github"
       }
     },
+    "hyperline": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792720704,
+        "narHash": "sha256-bwKJlFm2U2AGErRmozzylT45kD2Vk6iukAY9uNnxo60=",
+        "owner": "paralin",
+        "repo": "hyperline-nix",
+        "rev": "9b6defa9d7adad9357d2f40e02b9cfc47b95f9e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paralin",
+        "repo": "hyperline-nix",
+        "type": "github"
+      }
+    },
     "mnw": {
       "locked": {
         "lastModified": 1784154424,
@@ -316,6 +336,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "hyperline": "hyperline",
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
