@@ -65,11 +65,8 @@ in
     gnome-keyring
     inputs.zen-browser.packages."${pkgs.system}".default
     nurl
-    waydroid-helper
   ];
 
-  virtualisation.waydroid.enable = true;
-  virtualisation.waydroid.package = pkgs.waydroid-nftables;
 
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;
