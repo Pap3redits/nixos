@@ -103,6 +103,7 @@
       wowup-cf
       # (callPackage ./shared/statlocker-companion.nix { })
       freefilesync
+      grayjay
     ];
   };
   imports = [
