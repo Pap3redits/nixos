@@ -15,6 +15,7 @@
     shellcheck
     discount
     ispell
+    lua-language-server
   ];
 
   programs.zed-editor = {
