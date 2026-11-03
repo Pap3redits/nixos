@@ -1,5 +1,5 @@
 local mainMod = "SUPER"
-local terminal = "ghostty" 
+local terminal = "ghostty"
 local fileManager = "ghostty -e superfile"
 local ipc = "qs -c noctalia-shell ipc call"
 local menu = "noctalia msg panel-toggle launcher"
@@ -78,6 +78,13 @@ hl.window_rule({
     class = "discord"
   },
   workspace = "6"
+})
+hl.window_rule({
+    float = true,
+    match = {
+        class = "Waydroid"
+    },
+    size = {1920, 1080},
 })
 local suppressMaximizeRule = hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.
