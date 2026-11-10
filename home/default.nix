@@ -88,7 +88,6 @@
       bottles
       runelite
       emacs
-      deadlock-mod-manager
       gnumake
       lufus
       pangolin-cli

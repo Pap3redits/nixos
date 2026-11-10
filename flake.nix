@@ -32,8 +32,11 @@
       };
     };
 
+    #deadlock practice
     hyperline.url = "github:paralin/hyperline-nix";
     hyperline.inputs.nixpkgs.follows = "nixpkgs";
+
+    grimoire.url = "github:Slush97/grimoire/stable";
 
   };
 
@@ -45,6 +48,7 @@
       stylix,
       nvf,
       hyperline,
+      grimoire,
       ...
     }:
     {

@@ -65,6 +65,7 @@ in
     gnome-keyring
     inputs.zen-browser.packages."${pkgs.system}".default
     nurl
+    inputs.grimoire.packages.${pkgs.system}.default
   ];
 
 
