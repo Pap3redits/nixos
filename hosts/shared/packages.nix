@@ -57,7 +57,7 @@ in
     sddm-astronaut
     nix-init
     gamescope
-    lutris
+    #lutris
     # superfile-patched
     superfile
     hyprlandPlugins.hypr-dynamic-cursors

@@ -10,6 +10,7 @@
       "com.adamcake.Bolt"
       "com.dec05eba.gpu_screen_recorder"
       "com.collaboraoffice.Office"
+      "net.lutris.Lutris"
     ];
     update.auto = {
       enable = true;

@@ -1,5 +1,5 @@
 local mainMod = "SUPER"
-local terminal = "ghostty" 
+local terminal = "ghostty"
 local fileManager = "ghostty -e superfile"
 local ipc = "qs -c noctalia-shell ipc call"
 local menu = "noctalia msg panel-toggle launcher"
