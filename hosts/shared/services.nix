@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ lib, ... }:
 {
   services = {
 
@@ -58,5 +58,23 @@
   # users.extraGroups.vboxusers.members = [ "christian" ];
 
   virtualisation.docker.enable = true;
+
+ # REMOVE AND NO LONGER NEEDED
+  nixpkgs.overlays = [
+    (final: prev: {
+      hyprlandPlugins = prev.hyprlandPlugins // {
+        hypr-dynamic-cursors =
+          prev.hyprlandPlugins.hypr-dynamic-cursors.overrideAttrs (old: {
+            version = "0-unstable-2026-10-05";
+            src = prev.fetchFromGitHub {
+              owner = "VirtCode";
+              repo = "hypr-dynamic-cursors";
+              rev = "2a8d0b735328d874a78ca93b2f201649f712a74a";
+              hash = "sha256-PSt/SRtemvsoGYNFJ7YLiXGxT8EJe3AhmGwt5Vt79aA=";
+            };
+          });
+      };
+    })
+  ];
 
 }
